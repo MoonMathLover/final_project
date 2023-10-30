@@ -1,24 +1,22 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity =0.8.17;
 
-import "@thirdweb-dev/contracts/base/ERC721Base.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract ZKPNFT is ERC721Base {
+contract ZK_NFT is ERC721 {
+    uint16 public currentSupply;
 
-      constructor(
-        address _defaultAdmin,
-        string memory _name,
-        string memory _symbol,
-        address _royaltyRecipient,
-        uint128 _royaltyBps
-    )
-        ERC721Base(
-            _defaultAdmin,
-            _name,
-            _symbol,
-            _royaltyRecipient,
-            _royaltyBps
-        )
-    {}
+    uint256 public immutable maxSupply;
 
+    constructor() ERC721("ZKP Token", "ZKPT") {
+        maxSupply = 10_000;
+    }
+
+    function mint() external payable {
+        require(msg.value == 0.01 ether, "Mint price is 0.01 ether!");
+        require(currentSupply < maxSupply, "Can not mint more tokens!");
+
+        currentSupply += 1;
+        _mint(msg.sender, currentSupply);
+    }
 }
