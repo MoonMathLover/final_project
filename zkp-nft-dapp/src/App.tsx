@@ -1,6 +1,12 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
 
 export default function Home() {
+  const testAddress = "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045";
+
+  var getShortAddress = (address: string): string => {
+    return address.slice(0, 8) + "...." + address.slice(-6, -1);
+  };
+
   return (
     <div className="h-screen bg-gray-800">
       {/* This is the navigator */}
@@ -90,7 +96,7 @@ export default function Home() {
       </nav>
 
       {/* This is the card */}
-      <div className="h-full flex items-center justify-center">
+      <div className="flex justify-center pt-40">
         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-700 dark:border-gray-700">
           <a href="#">
             <img
@@ -103,7 +109,14 @@ export default function Home() {
             <div className="text-3xl font-semibold tracking-tight text-gray-900 text-white mb-5">
               Moon Math Lover NFT
             </div>
-
+            <div className="pb-5 font-mono text-gray-900 text-white">
+              <p className="text-sm text-gray-400">CONTRACT ADDRESS</p>
+              <p className="text-lg">{getShortAddress(testAddress)}</p>
+            </div>
+            <div className="pb-5 font-mono text-gray-900 text-white">
+              <p className="text-sm text-gray-400">TOKEN STANDARD</p>
+              <p className="text-lg">ERC721</p>
+            </div>
             <div className="flex items-center justify-between">
               <div className="flex flex-col">
                 <span className="text-sm text-slate-300">PRICE</span>
