@@ -1,5 +1,13 @@
-const Card: React.FC = () => {
-  const testAddress = "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045";
+import { Web3Button, useContract } from "@thirdweb-dev/react";
+
+const Card: React.FC<
+  React.PropsWithChildren<{
+    setDisplay: React.Dispatch<React.SetStateAction<boolean>>;
+  }>
+> = ({ setDisplay }) => {
+  const MOCK_CONTRACT: string = "DemoDay Contract Address";
+  const ADMIN: string = "DemoDay Contract Owner";
+  const { contract } = useContract(MOCK_CONTRACT);
   const getShortAddress = (address: string): string => {
     return address.slice(0, 8) + "...." + address.slice(-6, -1);
   };
@@ -18,7 +26,9 @@ const Card: React.FC = () => {
           </div>
           <div className="pb-5 font-mono">
             <p className="text-sm text-gray-400">CONTRACT ADDRESS</p>
-            <p className="text-lg text-white">{getShortAddress(testAddress)}</p>
+            <p className="text-lg text-white">
+              {getShortAddress(MOCK_CONTRACT)}
+            </p>
           </div>
           <div className="pb-5 font-mono">
             <p className="text-sm text-gray-400">TOKEN STANDARD</p>
@@ -31,12 +41,20 @@ const Card: React.FC = () => {
                 0.01 ETH
               </span>
             </div>
-            <button
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-xl px-5 py-2.5 m-3"
+            <Web3Button
+              contractAddress={MOCK_CONTRACT}
+              action={async () => {
+                await contract?.call("replace with the change stage function");
+              }}
+              onSuccess={() => {
+                setDisplay(true);
+              }}
+              onError={() => {
+                setDisplay(false);
+              }}
             >
               BUY IT
-            </button>
+            </Web3Button>
           </div>
         </div>
       </div>
