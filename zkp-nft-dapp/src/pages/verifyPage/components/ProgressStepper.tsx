@@ -1,15 +1,14 @@
 import Stepper from "awesome-react-stepper";
 import {
   Web3Button,
-  useContract,
   useContractRead,
   useAddress,
+  useContract,
 } from "@thirdweb-dev/react";
 
 const ProgressStepper: React.FC = () => {
   const MOCK_CONTRACT: string = "DemoDay Contract Address";
   const ADMIN: string = "DemoDay Contract Owner";
-
   const { contract } = useContract(MOCK_CONTRACT);
   const { data: stage } = useContractRead(contract, "stage");
 
