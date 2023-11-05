@@ -11,12 +11,11 @@ const activeChain = "ethereum";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
+// clientId={import.meta.env.VITE_TEMPLATE_CLIENT_ID}
+//activeChain={activeChain}
 root.render(
   <React.StrictMode>
-    <ThirdwebProvider
-      clientId={import.meta.env.VITE_TEMPLATE_CLIENT_ID}
-      activeChain={activeChain}
-    >
+    <ThirdwebProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>

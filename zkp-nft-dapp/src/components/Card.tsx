@@ -1,5 +1,6 @@
+import { demoDayContractAddr } from "../contracts";
+
 const Card: React.FC = () => {
-  const testAddress = "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045";
   const getShortAddress = (address: string): string => {
     return address.slice(0, 8) + "...." + address.slice(-6, -1);
   };
@@ -18,7 +19,9 @@ const Card: React.FC = () => {
           </div>
           <div className="pb-5 font-mono">
             <p className="text-sm text-gray-400">CONTRACT ADDRESS</p>
-            <p className="text-lg text-white">{getShortAddress(testAddress)}</p>
+            <p className="text-lg text-white">
+              {getShortAddress(demoDayContractAddr)}
+            </p>
           </div>
           <div className="pb-5 font-mono">
             <p className="text-sm text-gray-400">TOKEN STANDARD</p>
