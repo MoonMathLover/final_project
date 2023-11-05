@@ -1978,6 +1978,11 @@
     form-data "^4.0.0"
     uuid "^9.0.1"
 
+"@thirdweb-dev/tsconfig@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@thirdweb-dev/tsconfig/-/tsconfig-0.1.7.tgz#9f9157698902b3288508c9bd222dbf00ce65d667"
+  integrity sha512-0ZZQ3jy9UIsUvDbuETEZQ+bAZvB19kFDZLnKyAkQbrEZj++j6eiq69ysmvJ15CsnYtU0WYIexrLoTAcCptrNNw==
+
 "@thirdweb-dev/wallets@2.0.10":
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/@thirdweb-dev/wallets/-/wallets-2.0.10.tgz#4c53ac3d89ad16cc2f60686e07314cb2beb9f48f"

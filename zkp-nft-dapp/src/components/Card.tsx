@@ -1,16 +1,19 @@
+import { useContext, useEffect } from "react";
+import { ChainContext } from "../context/ChainContext";
 import { Web3Button, useContract } from "@thirdweb-dev/react";
+import { useLootBoxRevealContracts } from "../contracts";
+
+const getShortAddress = (address: string): string => {
+  return address.slice(0, 8) + "...." + address.slice(-6, -1);
+};
 
 const Card: React.FC<
   React.PropsWithChildren<{
     setDisplay: React.Dispatch<React.SetStateAction<boolean>>;
   }>
 > = ({ setDisplay }) => {
-  const MOCK_CONTRACT: string = "DemoDay Contract Address";
-  const ADMIN: string = "DemoDay Contract Owner";
-  const { contract } = useContract(MOCK_CONTRACT);
-  const getShortAddress = (address: string): string => {
-    return address.slice(0, 8) + "...." + address.slice(-6, -1);
-  };
+  const { selectedChain } = useContext(ChainContext);
+  const lcs = useLootBoxRevealContracts(selectedChain);
 
   return (
     <div className="flex justify-center pt-40 pb-10">
@@ -25,9 +28,9 @@ const Card: React.FC<
             Moon Math Lover NFT
           </div>
           <div className="pb-5 font-mono">
-            <p className="text-sm text-gray-400">CONTRACT ADDRESS</p>
+            <p className="text-sm text-gray-400">getShortAddress()</p>
             <p className="text-lg text-white">
-              {getShortAddress(MOCK_CONTRACT)}
+              {getShortAddress(lcs.demoDayContract!.getAddress())}
             </p>
           </div>
           <div className="pb-5 font-mono">
@@ -42,9 +45,11 @@ const Card: React.FC<
               </span>
             </div>
             <Web3Button
-              contractAddress={MOCK_CONTRACT}
+              contractAddress={lcs.demoDayContract!.getAddress()}
               action={async () => {
-                await contract?.call("replace with the change stage function");
+                await lcs.demoDayContract?.call(
+                  "replace with the change stage function"
+                );
               }}
               onSuccess={() => {
                 setDisplay(true);

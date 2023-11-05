@@ -1,17 +1,38 @@
 import Stepper from "awesome-react-stepper";
-import {
-  Web3Button,
-  useContractRead,
-  useAddress,
-  useContract,
-} from "@thirdweb-dev/react";
+import { Web3Button, useContractRead, useAddress } from "@thirdweb-dev/react";
+import { useLootBoxRevealContracts } from "../../../contracts";
+import { useContext, useEffect } from "react";
+import { ChainContext } from "../../../context/ChainContext";
 
 const ProgressStepper: React.FC = () => {
-  const MOCK_CONTRACT: string = "DemoDay Contract Address";
-  const ADMIN: string = "DemoDay Contract Owner";
-  const { contract } = useContract(MOCK_CONTRACT);
-  const { data: stage } = useContractRead(contract, "stage");
+  const { selectedChain } = useContext(ChainContext);
+  const lcs = useLootBoxRevealContracts(selectedChain);
+  const { data: stage } = useContractRead(lcs.demoDayContract, "stage");
+  const { data: owner } = useContractRead(lcs.demoDayContract, "owner");
+  console.log("owner:", owner);
 
+  const userAddr = useAddress();
+  // Debug call revert
+  // const sdk = useSDK();
+  // useEffect(() => {
+  //   if (lcs && lcs.demoDayContract) {
+  //     const addr = lcs.demoDayContract!.getAddress();
+  //     console.log("addr:", addr);
+
+  //     const provider = sdk?.getProvider();
+  //     if (provider === undefined) {
+  //       return;
+  //     }
+  //     provider.getCode(addr).then((code) => {
+  //       console.log("code:", code);
+  //       console.log("stage:", stage);
+  //     });
+  //   }
+  // });
+
+  if (stage === undefined) {
+    return <></>;
+  }
   return (
     <Stepper
       fillStroke="#172539"
@@ -19,11 +40,13 @@ const ProgressStepper: React.FC = () => {
       defaultActiveStep={stage}
       activeProgressBorder="2px solid grey"
       continueBtn={
-        useAddress() === ADMIN ? (
+        userAddr === owner ? (
           <Web3Button
-            contractAddress={MOCK_CONTRACT}
+            contractAddress={lcs.demoDayContract!.getAddress()}
             action={async () => {
-              await contract?.call("replace with the change stage function");
+              await lcs.demoDayContract?.call(
+                "replace with the change stage function"
+              );
             }}
             onSuccess={() => {}}
             onError={() => {}}
