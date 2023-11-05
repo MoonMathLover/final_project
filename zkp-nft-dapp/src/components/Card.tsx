@@ -12,9 +12,9 @@ const getShortAddress = (address: string | undefined): string | undefined => {
 
 const Card: React.FC<
   React.PropsWithChildren<{
-    setDisplay: React.Dispatch<React.SetStateAction<boolean>>;
+    setDisplayVerify: React.Dispatch<React.SetStateAction<boolean>>;
   }>
-> = ({ setDisplay }) => {
+> = ({ setDisplayVerify }) => {
   const { selectedChain } = useContext(ChainContext);
   const lcs = useLootBoxRevealContracts(selectedChain);
 
@@ -56,10 +56,10 @@ const Card: React.FC<
                   );
                 }}
                 onSuccess={() => {
-                  setDisplay(true);
+                  setDisplayVerify(true);
                 }}
                 onError={() => {
-                  setDisplay(false);
+                  setDisplayVerify(false);
                 }}
               >
                 BUY IT

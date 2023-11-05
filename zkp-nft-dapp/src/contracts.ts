@@ -1,6 +1,8 @@
-import { useContract } from "@thirdweb-dev/react";
+import { useContract, useContractWrite, useSDK } from "@thirdweb-dev/react";
 import DemoDaySolArtifact from "../contract-artifacts/DemoDay.sol/DemeDay.json";
 import VerifierSolArtifact from "../contract-artifacts/Verifier.sol/Verifier.json";
+import type { SmartContract } from "@thirdweb-dev/react";
+import * as ethers from "ethers";
 
 const contractsFromChain = (
   chain: string
@@ -38,4 +40,33 @@ export const useLootBoxRevealContracts = (chainName: string) => {
     demoDayContract,
     verifierContract,
   };
+};
+
+export const stage1_Next = async (
+  demoDay: SmartContract | undefined
+): Promise<void> => {
+  // _demo.commitRandao(0, 5000);
+  // _demo.commitVerifier(_verifierCodehash);
+  if (demoDay === undefined) {
+    console.log("demoDay undefined");
+    return;
+  }
+  const { mutateAsync: commitRandao } = useContractWrite(
+    demoDay,
+    "commitRandao"
+  );
+  const { mutateAsync: commitVerifier } = useContractWrite(
+    demoDay,
+    "commitVerifier"
+  );
+  const sdk = useSDK();
+  const provider = sdk?.getProvider();
+  const verifierCode = VerifierSolArtifact.deployedBytecode.object;
+  const verifierCodeHash = ethers.utils.keccak256(verifierCode);
+  console.log("verifierCodeHash:", verifierCodeHash);
+  debugger;
+  await commitRandao({ args: [0, 5000] });
+  await commitVerifier({
+    args: [verifierCodeHash],
+  });
 };

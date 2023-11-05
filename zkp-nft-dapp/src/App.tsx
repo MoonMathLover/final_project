@@ -14,14 +14,10 @@ export default function Home() {
   const [isDisplayVerify, setIsDisplayVerify] = useState(false);
   const userAddr = useAddress();
 
-  const setDisplay = () => {
-    setIsDisplayVerify(!isDisplayVerify);
-  };
-
   return (
     <>
       <Header />
-      <Card setDisplay={setDisplay} />
+      <Card setDisplayVerify={setIsDisplayVerify} />
       {isDisplayVerify || userAddr === owner ? <Verify /> : <></>}
     </>
   );
