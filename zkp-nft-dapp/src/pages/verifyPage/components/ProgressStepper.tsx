@@ -1,8 +1,13 @@
 import Stepper from "awesome-react-stepper";
-import { Web3Button, useContractRead, useAddress } from "@thirdweb-dev/react";
-import { useLootBoxRevealContracts } from "../../../contracts";
+import {
+  Web3Button,
+  useContractRead,
+  useAddress,
+  useSDK,
+} from "@thirdweb-dev/react";
 import { useContext, useEffect } from "react";
 import { ChainContext } from "../../../context/ChainContext";
+import { useLootBoxRevealContracts } from "../../../contracts";
 
 const ProgressStepper: React.FC = () => {
   const { selectedChain } = useContext(ChainContext);
@@ -28,7 +33,7 @@ const ProgressStepper: React.FC = () => {
   //       console.log("stage:", stage);
   //     });
   //   }
-  // });
+  // }, []);
 
   if (stage === undefined) {
     return <></>;

@@ -28,6 +28,13 @@ const anvilChain: MinimalChain = {
 
 const supportedChains = [Goerli, anvilChain];
 
+const chainNameToNameOrData = (chain: string) => {
+  if (chain == "anvil") {
+    return anvilChain;
+  }
+  return chain;
+};
+
 const Web3Root = () => {
   const [selectedChain, setSelectedChain] = useState("goerli");
 
@@ -44,13 +51,6 @@ const Web3Root = () => {
       </ThirdwebProvider>
     </ChainContext.Provider>
   );
-};
-
-const chainNameToNameOrData = (chain: string) => {
-  if (chain == "anvil") {
-    return anvilChain;
-  }
-  return chain;
 };
 
 const container = document.getElementById("root");

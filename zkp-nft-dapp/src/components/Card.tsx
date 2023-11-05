@@ -3,7 +3,10 @@ import { ChainContext } from "../context/ChainContext";
 import { Web3Button, useContract } from "@thirdweb-dev/react";
 import { useLootBoxRevealContracts } from "../contracts";
 
-const getShortAddress = (address: string): string => {
+const getShortAddress = (address: string | undefined): string | undefined => {
+  if (address === undefined) {
+    return undefined;
+  }
   return address.slice(0, 8) + "...." + address.slice(-6, -1);
 };
 
@@ -30,7 +33,7 @@ const Card: React.FC<
           <div className="pb-5 font-mono">
             <p className="text-sm text-gray-400">getShortAddress()</p>
             <p className="text-lg text-white">
-              {getShortAddress(lcs.demoDayContract!.getAddress())}
+              {getShortAddress(lcs.demoDayContract?.getAddress())}
             </p>
           </div>
           <div className="pb-5 font-mono">
@@ -44,22 +47,26 @@ const Card: React.FC<
                 0.01 ETH
               </span>
             </div>
-            <Web3Button
-              contractAddress={lcs.demoDayContract!.getAddress()}
-              action={async () => {
-                await lcs.demoDayContract?.call(
-                  "replace with the change stage function"
-                );
-              }}
-              onSuccess={() => {
-                setDisplay(true);
-              }}
-              onError={() => {
-                setDisplay(false);
-              }}
-            >
-              BUY IT
-            </Web3Button>
+            {lcs.demoDayContract ? (
+              <Web3Button
+                contractAddress={lcs.demoDayContract.getAddress()}
+                action={async () => {
+                  await lcs.demoDayContract?.call(
+                    "replace with the change stage function"
+                  );
+                }}
+                onSuccess={() => {
+                  setDisplay(true);
+                }}
+                onError={() => {
+                  setDisplay(false);
+                }}
+              >
+                BUY IT
+              </Web3Button>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>
