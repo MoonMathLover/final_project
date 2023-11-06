@@ -1,0 +1,474 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.22+commit.4fc1097e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/StageTimelock.sol\":\"StageTimelock\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":fisher-yates/=lib/fisher-yates/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"src/StageTimelock.sol\":{\"keccak256\":\"0xa3b84e0157668eda65dcd7df0042e58dd78a0c34c40a93482a29f6a1297dba6c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://246638d739ff83b440dc73ba9cd37c036eca41134b9c12068eec90e900882ca9\",\"dweb:/ipfs/QmaL3qAkgvCWRaKnEYdkX3EwZ3zwsUsKKHVmJ7ckkWiL8X\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.22+commit.4fc1097e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "fisher-yates/=lib/fisher-yates/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solady/=lib/solady/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/StageTimelock.sol": "StageTimelock"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/StageTimelock.sol": {
+        "keccak256": "0xa3b84e0157668eda65dcd7df0042e58dd78a0c34c40a93482a29f6a1297dba6c",
+        "urls": [
+          "bzz-raw://246638d739ff83b440dc73ba9cd37c036eca41134b9c12068eec90e900882ca9",
+          "dweb:/ipfs/QmaL3qAkgvCWRaKnEYdkX3EwZ3zwsUsKKHVmJ7ckkWiL8X"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/StageTimelock.sol",
+    "id": 48479,
+    "exportedSymbols": {
+      "StageTimelock": [
+        48478
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:403:42",
+    "nodes": [
+      {
+        "id": 48445,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:42",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 48478,
+        "nodeType": "ContractDefinition",
+        "src": "58:376:42",
+        "nodes": [
+          {
+            "id": 48447,
+            "nodeType": "VariableDeclaration",
+            "src": "96:27:42",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "$currentStage",
+            "nameLocation": "110:13:42",
+            "scope": 48478,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 48446,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "96:5:42",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 48459,
+            "nodeType": "ModifierDefinition",
+            "src": "130:108:42",
+            "nodes": [],
+            "body": {
+              "id": 48458,
+              "nodeType": "Block",
+              "src": "170:68:42",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        },
+                        "id": 48454,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 48452,
+                          "name": "$currentStage",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 48447,
+                          "src": "188:13:42",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint8",
+                            "typeString": "uint8"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 48453,
+                          "name": "specifiedStage",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 48449,
+                          "src": "205:14:42",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint8",
+                            "typeString": "uint8"
+                          }
+                        },
+                        "src": "188:31:42",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 48451,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "180:7:42",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 48455,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "180:40:42",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 48456,
+                  "nodeType": "ExpressionStatement",
+                  "src": "180:40:42"
+                },
+                {
+                  "id": 48457,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "230:1:42"
+                }
+              ]
+            },
+            "name": "timelock",
+            "nameLocation": "139:8:42",
+            "parameters": {
+              "id": 48450,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48449,
+                  "mutability": "mutable",
+                  "name": "specifiedStage",
+                  "nameLocation": "154:14:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48459,
+                  "src": "148:20:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 48448,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "148:5:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "147:22:42"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 48467,
+            "nodeType": "FunctionDefinition",
+            "src": "244:92:42",
+            "nodes": [],
+            "body": {
+              "id": 48466,
+              "nodeType": "Block",
+              "src": "299:37:42",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 48464,
+                    "name": "$currentStage",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 48447,
+                    "src": "316:13:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "functionReturnParameters": 48463,
+                  "id": 48465,
+                  "nodeType": "Return",
+                  "src": "309:20:42"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_currentStage",
+            "nameLocation": "253:13:42",
+            "parameters": {
+              "id": 48460,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "266:2:42"
+            },
+            "returnParameters": {
+              "id": 48463,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48462,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48467,
+                  "src": "292:5:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 48461,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "292:5:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "291:7:42"
+            },
+            "scope": 48478,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 48477,
+            "nodeType": "FunctionDefinition",
+            "src": "342:90:42",
+            "nodes": [],
+            "body": {
+              "id": 48476,
+              "nodeType": "Block",
+              "src": "390:42:42",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 48474,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 48472,
+                      "name": "$currentStage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48447,
+                      "src": "400:13:42",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 48473,
+                      "name": "nextStage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48469,
+                      "src": "416:9:42",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "src": "400:25:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "id": 48475,
+                  "nodeType": "ExpressionStatement",
+                  "src": "400:25:42"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_changeStage",
+            "nameLocation": "351:12:42",
+            "parameters": {
+              "id": 48470,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48469,
+                  "mutability": "mutable",
+                  "name": "nextStage",
+                  "nameLocation": "370:9:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48477,
+                  "src": "364:15:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 48468,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "364:5:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "363:17:42"
+            },
+            "returnParameters": {
+              "id": 48471,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "390:0:42"
+            },
+            "scope": 48478,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "StageTimelock",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          48478
+        ],
+        "name": "StageTimelock",
+        "nameLocation": "76:13:42",
+        "scope": 48479,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 42
+}

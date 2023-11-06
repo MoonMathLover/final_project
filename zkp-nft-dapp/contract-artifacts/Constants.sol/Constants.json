@@ -1,0 +1,415 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220029f4427722757bda91798465fd0db5d58020403e8acfc9add9c71a1e33985a164736f6c63430008160033",
+    "sourceMap": "58:563:45:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;58:563:45;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220029f4427722757bda91798465fd0db5d58020403e8acfc9add9c71a1e33985a164736f6c63430008160033",
+    "sourceMap": "58:563:45:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.22+commit.4fc1097e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"stateVariables\":{\"STAGE_0_DEFAULT\":{\"details\":\"default value of stage\"},\"STAGE_1_COMMIT\":{\"details\":\"commit stage for dev team to commit `verifier` and `future block number`\"},\"STAGE_2_USER\":{\"details\":\"user stage for user to purchase lootbox\"},\"STAGE_3_REVEAL\":{\"details\":\"reveal stage for dev team to reveal `verifier` and `randomness`\"},\"STAGE_4_UNLOCK\":{\"details\":\"unlock lootbox result\"},\"STAGE_5_FINISHED\":{\"details\":\"closed\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/utils/Constants.sol\":\"Constants\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":fisher-yates/=lib/fisher-yates/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"src/utils/Constants.sol\":{\"keccak256\":\"0x730d3220d8903cfcc109826e34e0fb2a19221cb79ab0b5990828e411b35c3717\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d2d2aaf5ab05d460f5940285305c009031be82987143ec3ec7f06ba11fc0a920\",\"dweb:/ipfs/QmcadovTpgiv1mbDL4teykoUNrYENYffamLeoE97JEkHKF\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.22+commit.4fc1097e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "fisher-yates/=lib/fisher-yates/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solady/=lib/solady/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/utils/Constants.sol": "Constants"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/utils/Constants.sol": {
+        "keccak256": "0x730d3220d8903cfcc109826e34e0fb2a19221cb79ab0b5990828e411b35c3717",
+        "urls": [
+          "bzz-raw://d2d2aaf5ab05d460f5940285305c009031be82987143ec3ec7f06ba11fc0a920",
+          "dweb:/ipfs/QmcadovTpgiv1mbDL4teykoUNrYENYffamLeoE97JEkHKF"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/utils/Constants.sol",
+    "id": 48711,
+    "exportedSymbols": {
+      "Constants": [
+        48710
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:590:45",
+    "nodes": [
+      {
+        "id": 48685,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:45",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 48710,
+        "nodeType": "ContractDefinition",
+        "src": "58:563:45",
+        "nodes": [
+          {
+            "id": 48689,
+            "nodeType": "VariableDeclaration",
+            "src": "118:34:45",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 48686,
+              "nodeType": "StructuredDocumentation",
+              "src": "82:31:45",
+              "text": "@dev default value of stage"
+            },
+            "mutability": "constant",
+            "name": "STAGE_0_DEFAULT",
+            "nameLocation": "133:15:45",
+            "scope": 48710,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 48687,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "118:5:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 48688,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "151:1:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 48693,
+            "nodeType": "VariableDeclaration",
+            "src": "244:33:45",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 48690,
+              "nodeType": "StructuredDocumentation",
+              "src": "158:81:45",
+              "text": "@dev commit stage for dev team to commit `verifier` and `future block number`"
+            },
+            "mutability": "constant",
+            "name": "STAGE_1_COMMIT",
+            "nameLocation": "259:14:45",
+            "scope": 48710,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 48691,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "244:5:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "31",
+              "id": 48692,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "276:1:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1_by_1",
+                "typeString": "int_const 1"
+              },
+              "value": "1"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 48697,
+            "nodeType": "VariableDeclaration",
+            "src": "336:31:45",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 48694,
+              "nodeType": "StructuredDocumentation",
+              "src": "283:48:45",
+              "text": "@dev user stage for user to purchase lootbox"
+            },
+            "mutability": "constant",
+            "name": "STAGE_2_USER",
+            "nameLocation": "351:12:45",
+            "scope": 48710,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 48695,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "336:5:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "32",
+              "id": 48696,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "366:1:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2_by_1",
+                "typeString": "int_const 2"
+              },
+              "value": "2"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 48701,
+            "nodeType": "VariableDeclaration",
+            "src": "450:33:45",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 48698,
+              "nodeType": "StructuredDocumentation",
+              "src": "373:72:45",
+              "text": "@dev reveal stage for dev team to reveal `verifier` and `randomness`"
+            },
+            "mutability": "constant",
+            "name": "STAGE_3_REVEAL",
+            "nameLocation": "465:14:45",
+            "scope": 48710,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 48699,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "450:5:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "33",
+              "id": 48700,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "482:1:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_3_by_1",
+                "typeString": "int_const 3"
+              },
+              "value": "3"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 48705,
+            "nodeType": "VariableDeclaration",
+            "src": "524:33:45",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 48702,
+              "nodeType": "StructuredDocumentation",
+              "src": "489:30:45",
+              "text": "@dev unlock lootbox result"
+            },
+            "mutability": "constant",
+            "name": "STAGE_4_UNLOCK",
+            "nameLocation": "539:14:45",
+            "scope": 48710,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 48703,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "524:5:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "34",
+              "id": 48704,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "556:1:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_4_by_1",
+                "typeString": "int_const 4"
+              },
+              "value": "4"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 48709,
+            "nodeType": "VariableDeclaration",
+            "src": "583:35:45",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 48706,
+              "nodeType": "StructuredDocumentation",
+              "src": "563:15:45",
+              "text": "@dev closed"
+            },
+            "mutability": "constant",
+            "name": "STAGE_5_FINISHED",
+            "nameLocation": "598:16:45",
+            "scope": 48710,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 48707,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "583:5:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "35",
+              "id": 48708,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "617:1:45",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_5_by_1",
+                "typeString": "int_const 5"
+              },
+              "value": "5"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Constants",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          48710
+        ],
+        "name": "Constants",
+        "nameLocation": "66:9:45",
+        "scope": 48711,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 45
+}

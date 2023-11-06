@@ -1,9 +1,22 @@
-import { demoDayContractAddr } from "../contracts";
+import { useContext, useEffect } from "react";
+import { ChainContext } from "../context/ChainContext";
+import { Web3Button, useContract } from "@thirdweb-dev/react";
+import { useLootBoxRevealContracts, userMint } from "../contracts";
 
-const Card: React.FC = () => {
-  const getShortAddress = (address: string): string => {
-    return address.slice(0, 8) + "...." + address.slice(-6, -1);
-  };
+const getShortAddress = (address: string | undefined): string | undefined => {
+  if (address === undefined) {
+    return undefined;
+  }
+  return address.slice(0, 8) + "...." + address.slice(-6, -1);
+};
+
+const Card: React.FC = (props: any) => {
+  const stage = props.stage;
+  const userAddr = props.userAddr;
+  const { selectedChain } = useContext(ChainContext);
+  const lcs = useLootBoxRevealContracts(selectedChain);
+  const setDisplayVerify = props.setDisplayVerify;
+  const invalidateState = props.invalidateState;
 
   return (
     <div className="flex justify-center pt-40 pb-10">
@@ -20,7 +33,7 @@ const Card: React.FC = () => {
           <div className="pb-5 font-mono">
             <p className="text-sm text-gray-400">CONTRACT ADDRESS</p>
             <p className="text-lg text-white">
-              {getShortAddress(demoDayContractAddr)}
+              {getShortAddress(lcs.demoDayContract?.getAddress())}
             </p>
           </div>
           <div className="pb-5 font-mono">
@@ -34,12 +47,23 @@ const Card: React.FC = () => {
                 0.01 ETH
               </span>
             </div>
-            <button
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-xl px-5 py-2.5 m-3"
-            >
-              BUY IT
-            </button>
+            {lcs.demoDayContract ? (
+              <Web3Button
+                isDisabled={stage === 2}
+                contractAddress={lcs.demoDayContract.getAddress()}
+                action={(demoDay: any) => userMint(demoDay, invalidateState)}
+                onSuccess={() => {
+                  setDisplayVerify(true);
+                }}
+                onError={() => {
+                  setDisplayVerify(false);
+                }}
+              >
+                BUY IT
+              </Web3Button>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>
