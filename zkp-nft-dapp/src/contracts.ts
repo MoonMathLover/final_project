@@ -8,7 +8,7 @@ import { AccessibilityIcon } from "lucide-react";
 import { BigNumber } from "ethers";
 import unlockData from "../testdata/unlock.json";
 
-const STAGE_FINISHED = 5;
+export const STAGE_FINISHED = 5;
 
 const contractsFromChain = (
   chain: string
