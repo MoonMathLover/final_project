@@ -24,8 +24,9 @@ echo PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2f
 
 ```
 # Set contract addresses for frontend
-cd final_project
+cd final_project/zkp-nft-dapp
 code .env.local
+yarn dev
 ```
 
 Repeat the "deploy contract" step to get the DemoDay contract back to stage 1.
