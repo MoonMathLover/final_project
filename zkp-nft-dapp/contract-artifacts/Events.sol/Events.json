@@ -41,12 +41,12 @@
   ],
   "bytecode": {
     "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122096a145ead1f2f06141763b48f0d1d16d0dd682ad9dda1b57ca92c2c83a15532f64736f6c63430008160033",
-    "sourceMap": "58:243:51:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;58:243:51;;;;;;;;;;;;;;;;;",
+    "sourceMap": "58:243:50:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;58:243:50;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
     "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122096a145ead1f2f06141763b48f0d1d16d0dd682ad9dda1b57ca92c2c83a15532f64736f6c63430008160033",
-    "sourceMap": "58:243:51:-:0;;;;;;;;",
+    "sourceMap": "58:243:50:-:0;;;;;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {},
@@ -144,19 +144,19 @@
   },
   "ast": {
     "absolutePath": "src/utils/Events.sol",
-    "id": 78105,
+    "id": 48737,
     "exportedSymbols": {
       "Events": [
-        78104
+        48736
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:270:51",
+    "src": "32:270:50",
     "nodes": [
       {
-        "id": 78090,
+        "id": 48722,
         "nodeType": "PragmaDirective",
-        "src": "32:24:51",
+        "src": "32:24:50",
         "nodes": [],
         "literals": [
           "solidity",
@@ -166,39 +166,39 @@
         ]
       },
       {
-        "id": 78104,
+        "id": 48736,
         "nodeType": "ContractDefinition",
-        "src": "58:243:51",
+        "src": "58:243:50",
         "nodes": [
           {
-            "id": 78097,
+            "id": 48729,
             "nodeType": "EventDefinition",
-            "src": "112:106:51",
+            "src": "112:106:50",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 78091,
+              "id": 48723,
               "nodeType": "StructuredDocumentation",
-              "src": "79:28:51",
+              "src": "79:28:50",
               "text": " LibRandao"
             },
             "eventSelector": "d642a917cfc06a8458004df786ba343f8b87cd6b6b8618fd5af161a4174c2e33",
             "name": "RandaoPropose",
-            "nameLocation": "118:13:51",
+            "nameLocation": "118:13:50",
             "parameters": {
-              "id": 78096,
+              "id": 48728,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 78093,
+                  "id": 48725,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "currentBlockNumber",
-                  "nameLocation": "157:18:51",
+                  "nameLocation": "157:18:50",
                   "nodeType": "VariableDeclaration",
-                  "scope": 78097,
-                  "src": "141:34:51",
+                  "scope": 48729,
+                  "src": "141:34:50",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -206,10 +206,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 78092,
+                    "id": 48724,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "141:7:51",
+                    "src": "141:7:50",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -219,14 +219,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 78095,
+                  "id": 48727,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "proposeBlockNumber",
-                  "nameLocation": "193:18:51",
+                  "nameLocation": "193:18:50",
                   "nodeType": "VariableDeclaration",
-                  "scope": 78097,
-                  "src": "185:26:51",
+                  "scope": 48729,
+                  "src": "185:26:50",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -234,10 +234,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 78094,
+                    "id": 48726,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "185:7:51",
+                    "src": "185:7:50",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -246,32 +246,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "131:86:51"
+              "src": "131:86:50"
             }
           },
           {
-            "id": 78103,
+            "id": 48735,
             "nodeType": "EventDefinition",
-            "src": "224:75:51",
+            "src": "224:75:50",
             "nodes": [],
             "anonymous": false,
             "eventSelector": "99923554a4b42f7c1be47dc94ecf54d52a2049d48ad045e9c718117cd63d727d",
             "name": "RandaoReveal",
-            "nameLocation": "230:12:51",
+            "nameLocation": "230:12:50",
             "parameters": {
-              "id": 78102,
+              "id": 48734,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 78099,
+                  "id": 48731,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "acctualBlockNumber",
-                  "nameLocation": "259:18:51",
+                  "nameLocation": "259:18:50",
                   "nodeType": "VariableDeclaration",
-                  "scope": 78103,
-                  "src": "243:34:51",
+                  "scope": 48735,
+                  "src": "243:34:50",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -279,10 +279,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 78098,
+                    "id": 48730,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "243:7:51",
+                    "src": "243:7:50",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -292,14 +292,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 78101,
+                  "id": 48733,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "randomness",
-                  "nameLocation": "287:10:51",
+                  "nameLocation": "287:10:50",
                   "nodeType": "VariableDeclaration",
-                  "scope": 78103,
-                  "src": "279:18:51",
+                  "scope": 48735,
+                  "src": "279:18:50",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -307,10 +307,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 78100,
+                    "id": 48732,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "279:7:51",
+                    "src": "279:7:50",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -319,7 +319,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "242:56:51"
+              "src": "242:56:50"
             }
           }
         ],
@@ -330,19 +330,19 @@
         "contractKind": "library",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          78104
+          48736
         ],
         "name": "Events",
-        "nameLocation": "66:6:51",
-        "scope": 78105,
+        "nameLocation": "66:6:50",
+        "scope": 48737,
         "usedErrors": [],
         "usedEvents": [
-          78097,
-          78103
+          48729,
+          48735
         ]
       }
     ],
     "license": "MIT"
   },
-  "id": 51
+  "id": 50
 }

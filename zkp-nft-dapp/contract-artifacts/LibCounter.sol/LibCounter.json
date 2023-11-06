@@ -2,12 +2,12 @@
   "abi": [],
   "bytecode": {
     "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220f32ba4937d5d0e9e39287894645449afccabc365df7faf94f103a71c7fdada0764736f6c63430008160033",
-    "sourceMap": "101:291:47:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;101:291:47;;;;;;;;;;;;;;;;;",
+    "sourceMap": "101:291:45:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;101:291:45;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
     "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220f32ba4937d5d0e9e39287894645449afccabc365df7faf94f103a71c7fdada0764736f6c63430008160033",
-    "sourceMap": "101:291:47:-:0;;;;;;;;",
+    "sourceMap": "101:291:45:-:0;;;;;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {},
@@ -66,22 +66,22 @@
   },
   "ast": {
     "absolutePath": "src/library/LibCounter.sol",
-    "id": 77973,
+    "id": 48549,
     "exportedSymbols": {
       "LibCounter": [
-        77972
+        48548
       ],
       "TypeCounter": [
-        77940
+        48516
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:361:47",
+    "src": "32:361:45",
     "nodes": [
       {
-        "id": 77937,
+        "id": 48513,
         "nodeType": "PragmaDirective",
-        "src": "32:24:47",
+        "src": "32:24:45",
         "nodes": [],
         "literals": [
           "solidity",
@@ -91,21 +91,21 @@
         ]
       },
       {
-        "id": 77940,
+        "id": 48516,
         "nodeType": "StructDefinition",
-        "src": "58:41:47",
+        "src": "58:41:45",
         "nodes": [],
         "canonicalName": "TypeCounter",
         "members": [
           {
             "constant": false,
-            "id": 77939,
+            "id": 48515,
             "mutability": "mutable",
             "name": "value",
-            "nameLocation": "91:5:47",
+            "nameLocation": "91:5:45",
             "nodeType": "VariableDeclaration",
-            "scope": 77940,
-            "src": "83:13:47",
+            "scope": 48516,
+            "src": "83:13:45",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -113,10 +113,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 77938,
+              "id": 48514,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "83:7:47",
+              "src": "83:7:45",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -126,59 +126,59 @@
           }
         ],
         "name": "TypeCounter",
-        "nameLocation": "65:11:47",
-        "scope": 77973,
+        "nameLocation": "65:11:45",
+        "scope": 48549,
         "visibility": "public"
       },
       {
-        "id": 77972,
+        "id": 48548,
         "nodeType": "ContractDefinition",
-        "src": "101:291:47",
+        "src": "101:291:45",
         "nodes": [
           {
-            "id": 77952,
+            "id": 48528,
             "nodeType": "FunctionDefinition",
-            "src": "126:103:47",
+            "src": "126:103:45",
             "nodes": [],
             "body": {
-              "id": 77951,
+              "id": 48527,
               "nodeType": "Block",
-              "src": "198:31:47",
+              "src": "198:31:45",
               "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "expression": {
-                      "id": 77948,
+                      "id": 48524,
                       "name": "s",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 77943,
-                      "src": "215:1:47",
+                      "referencedDeclaration": 48519,
+                      "src": "215:1:45",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TypeCounter_$77940_storage_ptr",
+                        "typeIdentifier": "t_struct$_TypeCounter_$48516_storage_ptr",
                         "typeString": "struct TypeCounter storage pointer"
                       }
                     },
-                    "id": 77949,
+                    "id": 48525,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
-                    "memberLocation": "217:5:47",
+                    "memberLocation": "217:5:45",
                     "memberName": "value",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 77939,
-                    "src": "215:7:47",
+                    "referencedDeclaration": 48515,
+                    "src": "215:7:45",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 77947,
-                  "id": 77950,
+                  "functionReturnParameters": 48523,
+                  "id": 48526,
                   "nodeType": "Return",
-                  "src": "208:14:47"
+                  "src": "208:14:45"
                 }
               ]
             },
@@ -186,64 +186,64 @@
             "kind": "function",
             "modifiers": [],
             "name": "current",
-            "nameLocation": "135:7:47",
+            "nameLocation": "135:7:45",
             "parameters": {
-              "id": 77944,
+              "id": 48520,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77943,
+                  "id": 48519,
                   "mutability": "mutable",
                   "name": "s",
-                  "nameLocation": "163:1:47",
+                  "nameLocation": "163:1:45",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77952,
-                  "src": "143:21:47",
+                  "scope": 48528,
+                  "src": "143:21:45",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TypeCounter_$77940_storage_ptr",
+                    "typeIdentifier": "t_struct$_TypeCounter_$48516_storage_ptr",
                     "typeString": "struct TypeCounter"
                   },
                   "typeName": {
-                    "id": 77942,
+                    "id": 48518,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 77941,
+                      "id": 48517,
                       "name": "TypeCounter",
                       "nameLocations": [
-                        "143:11:47"
+                        "143:11:45"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 77940,
-                      "src": "143:11:47"
+                      "referencedDeclaration": 48516,
+                      "src": "143:11:45"
                     },
-                    "referencedDeclaration": 77940,
-                    "src": "143:11:47",
+                    "referencedDeclaration": 48516,
+                    "src": "143:11:45",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TypeCounter_$77940_storage_ptr",
+                      "typeIdentifier": "t_struct$_TypeCounter_$48516_storage_ptr",
                       "typeString": "struct TypeCounter"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "142:23:47"
+              "src": "142:23:45"
             },
             "returnParameters": {
-              "id": 77947,
+              "id": 48523,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77946,
+                  "id": 48522,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77952,
-                  "src": "189:7:47",
+                  "scope": 48528,
+                  "src": "189:7:45",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -251,10 +251,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 77945,
+                    "id": 48521,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "189:7:47",
+                    "src": "189:7:45",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -263,59 +263,59 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "188:9:47"
+              "src": "188:9:45"
             },
-            "scope": 77972,
+            "scope": 48548,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 77971,
+            "id": 48547,
             "nodeType": "FunctionDefinition",
-            "src": "235:155:47",
+            "src": "235:155:45",
             "nodes": [],
             "body": {
-              "id": 77970,
+              "id": 48546,
               "nodeType": "Block",
-              "src": "303:87:47",
+              "src": "303:87:45",
               "nodes": [],
               "statements": [
                 {
-                  "id": 77966,
+                  "id": 48542,
                   "nodeType": "UncheckedBlock",
-                  "src": "313:47:47",
+                  "src": "313:47:45",
                   "statements": [
                     {
                       "expression": {
-                        "id": 77964,
+                        "id": 48540,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftHandSide": {
                           "expression": {
-                            "id": 77960,
+                            "id": 48536,
                             "name": "s",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 77955,
-                            "src": "337:1:47",
+                            "referencedDeclaration": 48531,
+                            "src": "337:1:45",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_TypeCounter_$77940_storage_ptr",
+                              "typeIdentifier": "t_struct$_TypeCounter_$48516_storage_ptr",
                               "typeString": "struct TypeCounter storage pointer"
                             }
                           },
-                          "id": 77962,
+                          "id": 48538,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": true,
-                          "memberLocation": "339:5:47",
+                          "memberLocation": "339:5:45",
                           "memberName": "value",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 77939,
-                          "src": "337:7:47",
+                          "referencedDeclaration": 48515,
+                          "src": "337:7:45",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -325,65 +325,65 @@
                         "operator": "+=",
                         "rightHandSide": {
                           "hexValue": "31",
-                          "id": 77963,
+                          "id": 48539,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "348:1:47",
+                          "src": "348:1:45",
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_1_by_1",
                             "typeString": "int_const 1"
                           },
                           "value": "1"
                         },
-                        "src": "337:12:47",
+                        "src": "337:12:45",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       },
-                      "id": 77965,
+                      "id": 48541,
                       "nodeType": "ExpressionStatement",
-                      "src": "337:12:47"
+                      "src": "337:12:45"
                     }
                   ]
                 },
                 {
                   "expression": {
                     "expression": {
-                      "id": 77967,
+                      "id": 48543,
                       "name": "s",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 77955,
-                      "src": "376:1:47",
+                      "referencedDeclaration": 48531,
+                      "src": "376:1:45",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TypeCounter_$77940_storage_ptr",
+                        "typeIdentifier": "t_struct$_TypeCounter_$48516_storage_ptr",
                         "typeString": "struct TypeCounter storage pointer"
                       }
                     },
-                    "id": 77968,
+                    "id": 48544,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
-                    "memberLocation": "378:5:47",
+                    "memberLocation": "378:5:45",
                     "memberName": "value",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 77939,
-                    "src": "376:7:47",
+                    "referencedDeclaration": 48515,
+                    "src": "376:7:45",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 77959,
-                  "id": 77969,
+                  "functionReturnParameters": 48535,
+                  "id": 48545,
                   "nodeType": "Return",
-                  "src": "369:14:47"
+                  "src": "369:14:45"
                 }
               ]
             },
@@ -391,64 +391,64 @@
             "kind": "function",
             "modifiers": [],
             "name": "increase",
-            "nameLocation": "244:8:47",
+            "nameLocation": "244:8:45",
             "parameters": {
-              "id": 77956,
+              "id": 48532,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77955,
+                  "id": 48531,
                   "mutability": "mutable",
                   "name": "s",
-                  "nameLocation": "273:1:47",
+                  "nameLocation": "273:1:45",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77971,
-                  "src": "253:21:47",
+                  "scope": 48547,
+                  "src": "253:21:45",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TypeCounter_$77940_storage_ptr",
+                    "typeIdentifier": "t_struct$_TypeCounter_$48516_storage_ptr",
                     "typeString": "struct TypeCounter"
                   },
                   "typeName": {
-                    "id": 77954,
+                    "id": 48530,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 77953,
+                      "id": 48529,
                       "name": "TypeCounter",
                       "nameLocations": [
-                        "253:11:47"
+                        "253:11:45"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 77940,
-                      "src": "253:11:47"
+                      "referencedDeclaration": 48516,
+                      "src": "253:11:45"
                     },
-                    "referencedDeclaration": 77940,
-                    "src": "253:11:47",
+                    "referencedDeclaration": 48516,
+                    "src": "253:11:45",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TypeCounter_$77940_storage_ptr",
+                      "typeIdentifier": "t_struct$_TypeCounter_$48516_storage_ptr",
                       "typeString": "struct TypeCounter"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "252:23:47"
+              "src": "252:23:45"
             },
             "returnParameters": {
-              "id": 77959,
+              "id": 48535,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77958,
+                  "id": 48534,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77971,
-                  "src": "294:7:47",
+                  "scope": 48547,
+                  "src": "294:7:45",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -456,10 +456,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 77957,
+                    "id": 48533,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "294:7:47",
+                    "src": "294:7:45",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -468,9 +468,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "293:9:47"
+              "src": "293:9:45"
             },
-            "scope": 77972,
+            "scope": 48548,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
@@ -483,16 +483,16 @@
         "contractKind": "library",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          77972
+          48548
         ],
         "name": "LibCounter",
-        "nameLocation": "109:10:47",
-        "scope": 77973,
+        "nameLocation": "109:10:45",
+        "scope": 48549,
         "usedErrors": [],
         "usedEvents": []
       }
     ],
     "license": "MIT"
   },
-  "id": 47
+  "id": 45
 }

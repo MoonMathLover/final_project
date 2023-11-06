@@ -98,17 +98,17 @@
   },
   "ast": {
     "absolutePath": "lib/solady/src/utils/SSTORE2.sol",
-    "id": 77142,
+    "id": 47774,
     "exportedSymbols": {
       "SSTORE2": [
-        77141
+        47773
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:12843:33",
     "nodes": [
       {
-        "id": 77038,
+        "id": 47670,
         "nodeType": "PragmaDirective",
         "src": "32:23:33",
         "nodes": [],
@@ -120,18 +120,18 @@
         ]
       },
       {
-        "id": 77141,
+        "id": 47773,
         "nodeType": "ContractDefinition",
         "src": "519:12355:33",
         "nodes": [
           {
-            "id": 77043,
+            "id": 47675,
             "nodeType": "VariableDeclaration",
             "src": "935:41:33",
             "nodes": [],
             "constant": true,
             "documentation": {
-              "id": 77040,
+              "id": 47672,
               "nodeType": "StructuredDocumentation",
               "src": "824:106:33",
               "text": "@dev We skip the first byte as it's a STOP opcode,\n which ensures the contract can't be called."
@@ -139,7 +139,7 @@
             "mutability": "constant",
             "name": "DATA_OFFSET",
             "nameLocation": "961:11:33",
-            "scope": 77141,
+            "scope": 47773,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -147,7 +147,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 77041,
+              "id": 47673,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "935:7:33",
@@ -158,7 +158,7 @@
             },
             "value": {
               "hexValue": "31",
-              "id": 77042,
+              "id": 47674,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -175,12 +175,12 @@
             "visibility": "internal"
           },
           {
-            "id": 77046,
+            "id": 47678,
             "nodeType": "ErrorDefinition",
             "src": "1318:25:33",
             "nodes": [],
             "documentation": {
-              "id": 77044,
+              "id": 47676,
               "nodeType": "StructuredDocumentation",
               "src": "1266:47:33",
               "text": "@dev Unable to deploy the storage contract."
@@ -189,19 +189,19 @@
             "name": "DeploymentFailed",
             "nameLocation": "1324:16:33",
             "parameters": {
-              "id": 77045,
+              "id": 47677,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1340:2:33"
             }
           },
           {
-            "id": 77049,
+            "id": 47681,
             "nodeType": "ErrorDefinition",
             "src": "1403:23:33",
             "nodes": [],
             "documentation": {
-              "id": 77047,
+              "id": 47679,
               "nodeType": "StructuredDocumentation",
               "src": "1349:49:33",
               "text": "@dev The storage contract address is invalid."
@@ -210,19 +210,19 @@
             "name": "InvalidPointer",
             "nameLocation": "1409:14:33",
             "parameters": {
-              "id": 77048,
+              "id": 47680,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1423:2:33"
             }
           },
           {
-            "id": 77052,
+            "id": 47684,
             "nodeType": "ErrorDefinition",
             "src": "1512:24:33",
             "nodes": [],
             "documentation": {
-              "id": 77050,
+              "id": 47682,
               "nodeType": "StructuredDocumentation",
               "src": "1432:75:33",
               "text": "@dev Attempt to read outside of the storage contract's bytecode bounds."
@@ -231,19 +231,19 @@
             "name": "ReadOutOfBounds",
             "nameLocation": "1518:15:33",
             "parameters": {
-              "id": 77051,
+              "id": 47683,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1533:2:33"
             }
           },
           {
-            "id": 77062,
+            "id": 47694,
             "nodeType": "FunctionDefinition",
             "src": "1917:2661:33",
             "nodes": [],
             "body": {
-              "id": 77061,
+              "id": 47693,
               "nodeType": "Block",
               "src": "1986:2592:33",
               "nodes": [],
@@ -661,63 +661,63 @@
                   "evmVersion": "paris",
                   "externalReferences": [
                     {
-                      "declaration": 77043,
+                      "declaration": 47675,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "2233:11:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77055,
+                      "declaration": 47687,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "2094:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77055,
+                      "declaration": 47687,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "3814:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77055,
+                      "declaration": 47687,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "4128:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77055,
+                      "declaration": 47687,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "4537:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77058,
+                      "declaration": 47690,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "4103:7:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77058,
+                      "declaration": 47690,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "4229:7:33",
                       "valueSize": 1
                     }
                   ],
-                  "id": 77060,
+                  "id": 47692,
                   "nodeType": "InlineAssembly",
                   "src": "2039:2533:33"
                 }
               ]
             },
             "documentation": {
-              "id": 77053,
+              "id": 47685,
               "nodeType": "StructuredDocumentation",
               "src": "1825:87:33",
               "text": "@dev Writes `data` into the bytecode of a storage contract and returns its address."
@@ -728,17 +728,17 @@
             "name": "write",
             "nameLocation": "1926:5:33",
             "parameters": {
-              "id": 77056,
+              "id": 47688,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77055,
+                  "id": 47687,
                   "mutability": "mutable",
                   "name": "data",
                   "nameLocation": "1945:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77062,
+                  "scope": 47694,
                   "src": "1932:17:33",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -747,7 +747,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 77054,
+                    "id": 47686,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1932:5:33",
@@ -762,17 +762,17 @@
               "src": "1931:19:33"
             },
             "returnParameters": {
-              "id": 77059,
+              "id": 47691,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77058,
+                  "id": 47690,
                   "mutability": "mutable",
                   "name": "pointer",
                   "nameLocation": "1977:7:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77062,
+                  "scope": 47694,
                   "src": "1969:15:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -781,7 +781,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 77057,
+                    "id": 47689,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1969:7:33",
@@ -796,18 +796,18 @@
               ],
               "src": "1968:17:33"
             },
-            "scope": 77141,
+            "scope": 47773,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 77074,
+            "id": 47706,
             "nodeType": "FunctionDefinition",
             "src": "4710:1266:33",
             "nodes": [],
             "body": {
-              "id": 77073,
+              "id": 47705,
               "nodeType": "Block",
               "src": "4826:1150:33",
               "nodes": [],
@@ -1231,70 +1231,70 @@
                   "evmVersion": "paris",
                   "externalReferences": [
                     {
-                      "declaration": 77043,
+                      "declaration": 47675,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "4992:11:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77065,
+                      "declaration": 47697,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "4934:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77065,
+                      "declaration": 47697,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "5205:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77065,
+                      "declaration": 47697,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "5520:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77065,
+                      "declaration": 47697,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "5935:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77070,
+                      "declaration": 47702,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "5494:7:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77070,
+                      "declaration": 47702,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "5627:7:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77067,
+                      "declaration": 47699,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "5553:4:33",
                       "valueSize": 1
                     }
                   ],
-                  "id": 77072,
+                  "id": 47704,
                   "nodeType": "InlineAssembly",
                   "src": "4879:1091:33"
                 }
               ]
             },
             "documentation": {
-              "id": 77063,
+              "id": 47695,
               "nodeType": "StructuredDocumentation",
               "src": "4584:121:33",
               "text": "@dev Writes `data` into the bytecode of a storage contract with `salt`\n and returns its deterministic address."
@@ -1305,17 +1305,17 @@
             "name": "writeDeterministic",
             "nameLocation": "4719:18:33",
             "parameters": {
-              "id": 77068,
+              "id": 47700,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77065,
+                  "id": 47697,
                   "mutability": "mutable",
                   "name": "data",
                   "nameLocation": "4751:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77074,
+                  "scope": 47706,
                   "src": "4738:17:33",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1324,7 +1324,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 77064,
+                    "id": 47696,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "4738:5:33",
@@ -1337,12 +1337,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 77067,
+                  "id": 47699,
                   "mutability": "mutable",
                   "name": "salt",
                   "nameLocation": "4765:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77074,
+                  "scope": 47706,
                   "src": "4757:12:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1351,7 +1351,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 77066,
+                    "id": 47698,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "4757:7:33",
@@ -1366,17 +1366,17 @@
               "src": "4737:33:33"
             },
             "returnParameters": {
-              "id": 77071,
+              "id": 47703,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77070,
+                  "id": 47702,
                   "mutability": "mutable",
                   "name": "pointer",
                   "nameLocation": "4813:7:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77074,
+                  "scope": 47706,
                   "src": "4805:15:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1385,7 +1385,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 77069,
+                    "id": 47701,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4805:7:33",
@@ -1400,18 +1400,18 @@
               ],
               "src": "4804:17:33"
             },
-            "scope": 77141,
+            "scope": 47773,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 77084,
+            "id": 47716,
             "nodeType": "FunctionDefinition",
             "src": "6129:765:33",
             "nodes": [],
             "body": {
-              "id": 77083,
+              "id": 47715,
               "nodeType": "Block",
               "src": "6207:687:33",
               "nodes": [],
@@ -1751,56 +1751,56 @@
                   "evmVersion": "paris",
                   "externalReferences": [
                     {
-                      "declaration": 77043,
+                      "declaration": 47675,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "6373:11:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77077,
+                      "declaration": 47709,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "6315:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77077,
+                      "declaration": 47709,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "6640:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77077,
+                      "declaration": 47709,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "6732:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77077,
+                      "declaration": 47709,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "6853:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77080,
+                      "declaration": 47712,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "6710:4:33",
                       "valueSize": 1
                     }
                   ],
-                  "id": 77082,
+                  "id": 47714,
                   "nodeType": "InlineAssembly",
                   "src": "6260:628:33"
                 }
               ]
             },
             "documentation": {
-              "id": 77075,
+              "id": 47707,
               "nodeType": "StructuredDocumentation",
               "src": "5982:142:33",
               "text": "@dev Returns the initialization code hash of the storage contract for `data`.\n Used for mining vanity addresses with create2crunch."
@@ -1811,17 +1811,17 @@
             "name": "initCodeHash",
             "nameLocation": "6138:12:33",
             "parameters": {
-              "id": 77078,
+              "id": 47710,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77077,
+                  "id": 47709,
                   "mutability": "mutable",
                   "name": "data",
                   "nameLocation": "6164:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77084,
+                  "scope": 47716,
                   "src": "6151:17:33",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1830,7 +1830,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 77076,
+                    "id": 47708,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "6151:5:33",
@@ -1845,17 +1845,17 @@
               "src": "6150:19:33"
             },
             "returnParameters": {
-              "id": 77081,
+              "id": 47713,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77080,
+                  "id": 47712,
                   "mutability": "mutable",
                   "name": "hash",
                   "nameLocation": "6201:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77084,
+                  "scope": 47716,
                   "src": "6193:12:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1864,7 +1864,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 77079,
+                    "id": 47711,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "6193:7:33",
@@ -1878,35 +1878,35 @@
               ],
               "src": "6192:14:33"
             },
-            "scope": 77141,
+            "scope": 47773,
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 77104,
+            "id": 47736,
             "nodeType": "FunctionDefinition",
             "src": "7105:652:33",
             "nodes": [],
             "body": {
-              "id": 77103,
+              "id": 47735,
               "nodeType": "Block",
               "src": "7263:494:33",
               "nodes": [],
               "statements": [
                 {
                   "assignments": [
-                    77097
+                    47729
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 77097,
+                      "id": 47729,
                       "mutability": "mutable",
                       "name": "hash",
                       "nameLocation": "7281:4:33",
                       "nodeType": "VariableDeclaration",
-                      "scope": 77103,
+                      "scope": 47735,
                       "src": "7273:12:33",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1915,7 +1915,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 77096,
+                        "id": 47728,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "7273:7:33",
@@ -1927,15 +1927,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 77101,
+                  "id": 47733,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 77099,
+                        "id": 47731,
                         "name": "data",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 77087,
+                        "referencedDeclaration": 47719,
                         "src": "7301:4:33",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -1950,18 +1950,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 77098,
+                      "id": 47730,
                       "name": "initCodeHash",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 77084,
+                      "referencedDeclaration": 47716,
                       "src": "7288:12:33",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
                         "typeString": "function (bytes memory) pure returns (bytes32)"
                       }
                     },
-                    "id": 77100,
+                    "id": 47732,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2219,42 +2219,42 @@
                   "evmVersion": "paris",
                   "externalReferences": [
                     {
-                      "declaration": 77091,
+                      "declaration": 47723,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "7539:8:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77097,
+                      "declaration": 47729,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "7500:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77094,
+                      "declaration": 47726,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "7593:9:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77089,
+                      "declaration": 47721,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "7575:4:33",
                       "valueSize": 1
                     }
                   ],
-                  "id": 77102,
+                  "id": 47734,
                   "nodeType": "InlineAssembly",
                   "src": "7359:392:33"
                 }
               ]
             },
             "documentation": {
-              "id": 77085,
+              "id": 47717,
               "nodeType": "StructuredDocumentation",
               "src": "6900:200:33",
               "text": "@dev Returns the address of the storage contract for `data`\n deployed with `salt` by `deployer`.\n Note: The returned result has dirty upper 96 bits. Please clean if used in assembly."
@@ -2265,17 +2265,17 @@
             "name": "predictDeterministicAddress",
             "nameLocation": "7114:27:33",
             "parameters": {
-              "id": 77092,
+              "id": 47724,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77087,
+                  "id": 47719,
                   "mutability": "mutable",
                   "name": "data",
                   "nameLocation": "7155:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77104,
+                  "scope": 47736,
                   "src": "7142:17:33",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2284,7 +2284,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 77086,
+                    "id": 47718,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "7142:5:33",
@@ -2297,12 +2297,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 77089,
+                  "id": 47721,
                   "mutability": "mutable",
                   "name": "salt",
                   "nameLocation": "7169:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77104,
+                  "scope": 47736,
                   "src": "7161:12:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2311,7 +2311,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 77088,
+                    "id": 47720,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "7161:7:33",
@@ -2324,12 +2324,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 77091,
+                  "id": 47723,
                   "mutability": "mutable",
                   "name": "deployer",
                   "nameLocation": "7183:8:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77104,
+                  "scope": 47736,
                   "src": "7175:16:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2338,7 +2338,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 77090,
+                    "id": 47722,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "7175:7:33",
@@ -2354,17 +2354,17 @@
               "src": "7141:51:33"
             },
             "returnParameters": {
-              "id": 77095,
+              "id": 47727,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77094,
+                  "id": 47726,
                   "mutability": "mutable",
                   "name": "predicted",
                   "nameLocation": "7248:9:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77104,
+                  "scope": 47736,
                   "src": "7240:17:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2373,7 +2373,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 77093,
+                    "id": 47725,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "7240:7:33",
@@ -2388,18 +2388,18 @@
               ],
               "src": "7239:19:33"
             },
-            "scope": 77141,
+            "scope": 47773,
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 77114,
+            "id": 47746,
             "nodeType": "FunctionDefinition",
             "src": "8138:1143:33",
             "nodes": [],
             "body": {
-              "id": 77113,
+              "id": 47745,
               "nodeType": "Block",
               "src": "8211:1070:33",
               "nodes": [],
@@ -2879,77 +2879,77 @@
                   "evmVersion": "paris",
                   "externalReferences": [
                     {
-                      "declaration": 77043,
+                      "declaration": 47675,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "8688:11:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77043,
+                      "declaration": 47675,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "9247:11:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77110,
+                      "declaration": 47742,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "9004:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77110,
+                      "declaration": 47742,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "9053:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77110,
+                      "declaration": 47742,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "9109:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77110,
+                      "declaration": 47742,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "9148:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77110,
+                      "declaration": 47742,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "9234:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77107,
+                      "declaration": 47739,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "8322:7:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77107,
+                      "declaration": 47739,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "9221:7:33",
                       "valueSize": 1
                     }
                   ],
-                  "id": 77112,
+                  "id": 47744,
                   "nodeType": "InlineAssembly",
                   "src": "8264:1011:33"
                 }
               ]
             },
             "documentation": {
-              "id": 77105,
+              "id": 47737,
               "nodeType": "StructuredDocumentation",
               "src": "8046:87:33",
               "text": "@dev Returns all the `data` from the bytecode of the storage contract at `pointer`."
@@ -2960,17 +2960,17 @@
             "name": "read",
             "nameLocation": "8147:4:33",
             "parameters": {
-              "id": 77108,
+              "id": 47740,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77107,
+                  "id": 47739,
                   "mutability": "mutable",
                   "name": "pointer",
                   "nameLocation": "8160:7:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77114,
+                  "scope": 47746,
                   "src": "8152:15:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2979,7 +2979,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 77106,
+                    "id": 47738,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "8152:7:33",
@@ -2995,17 +2995,17 @@
               "src": "8151:17:33"
             },
             "returnParameters": {
-              "id": 77111,
+              "id": 47743,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77110,
+                  "id": 47742,
                   "mutability": "mutable",
                   "name": "data",
                   "nameLocation": "8205:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77114,
+                  "scope": 47746,
                   "src": "8192:17:33",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3014,7 +3014,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 77109,
+                    "id": 47741,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "8192:5:33",
@@ -3028,18 +3028,18 @@
               ],
               "src": "8191:19:33"
             },
-            "scope": 77141,
+            "scope": 47773,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 77126,
+            "id": 47758,
             "nodeType": "FunctionDefinition",
             "src": "9440:1519:33",
             "nodes": [],
             "body": {
-              "id": 77125,
+              "id": 47757,
               "nodeType": "Block",
               "src": "9528:1431:33",
               "nodes": [],
@@ -3675,98 +3675,98 @@
                   "evmVersion": "paris",
                   "externalReferences": [
                     {
-                      "declaration": 77043,
+                      "declaration": 47675,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10353:11:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77043,
+                      "declaration": 47675,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10924:11:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77122,
+                      "declaration": 47754,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10670:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77122,
+                      "declaration": 47754,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10719:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77122,
+                      "declaration": 47754,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10775:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77122,
+                      "declaration": 47754,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10814:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77122,
+                      "declaration": 47754,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10900:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77117,
+                      "declaration": 47749,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10887:7:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77117,
+                      "declaration": 47749,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "9639:7:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77119,
+                      "declaration": 47751,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10079:5:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77119,
+                      "declaration": 47751,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10346:5:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77119,
+                      "declaration": 47751,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "10917:5:33",
                       "valueSize": 1
                     }
                   ],
-                  "id": 77124,
+                  "id": 47756,
                   "nodeType": "InlineAssembly",
                   "src": "9581:1372:33"
                 }
               ]
             },
             "documentation": {
-              "id": 77115,
+              "id": 47747,
               "nodeType": "StructuredDocumentation",
               "src": "9287:148:33",
               "text": "@dev Returns the `data` from the bytecode of the storage contract at `pointer`,\n from the byte at `start`, to the end of the data stored."
@@ -3777,17 +3777,17 @@
             "name": "read",
             "nameLocation": "9449:4:33",
             "parameters": {
-              "id": 77120,
+              "id": 47752,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77117,
+                  "id": 47749,
                   "mutability": "mutable",
                   "name": "pointer",
                   "nameLocation": "9462:7:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77126,
+                  "scope": 47758,
                   "src": "9454:15:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3796,7 +3796,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 77116,
+                    "id": 47748,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "9454:7:33",
@@ -3810,12 +3810,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 77119,
+                  "id": 47751,
                   "mutability": "mutable",
                   "name": "start",
                   "nameLocation": "9479:5:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77126,
+                  "scope": 47758,
                   "src": "9471:13:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3824,7 +3824,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 77118,
+                    "id": 47750,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "9471:7:33",
@@ -3839,17 +3839,17 @@
               "src": "9453:32:33"
             },
             "returnParameters": {
-              "id": 77123,
+              "id": 47755,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77122,
+                  "id": 47754,
                   "mutability": "mutable",
                   "name": "data",
                   "nameLocation": "9522:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77126,
+                  "scope": 47758,
                   "src": "9509:17:33",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3858,7 +3858,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 77121,
+                    "id": 47753,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "9509:5:33",
@@ -3872,18 +3872,18 @@
               ],
               "src": "9508:19:33"
             },
-            "scope": 77141,
+            "scope": 47773,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 77140,
+            "id": 47772,
             "nodeType": "FunctionDefinition",
             "src": "11140:1732:33",
             "nodes": [],
             "body": {
-              "id": 77139,
+              "id": 47771,
               "nodeType": "Block",
               "src": "11269:1603:33",
               "nodes": [],
@@ -4551,112 +4551,112 @@
                   "evmVersion": "paris",
                   "externalReferences": [
                     {
-                      "declaration": 77043,
+                      "declaration": 47675,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12837:11:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77136,
+                      "declaration": 47768,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12583:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77136,
+                      "declaration": 47768,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12632:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77136,
+                      "declaration": 47768,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12688:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77136,
+                      "declaration": 47768,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12727:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77136,
+                      "declaration": 47768,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12813:4:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77133,
+                      "declaration": 47765,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "11915:3:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77133,
+                      "declaration": 47765,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "11976:3:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77133,
+                      "declaration": 47765,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12268:3:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77129,
+                      "declaration": 47761,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "11380:7:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77129,
+                      "declaration": 47761,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12800:7:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77131,
+                      "declaration": 47763,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "11969:5:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77131,
+                      "declaration": 47763,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12273:5:33",
                       "valueSize": 1
                     },
                     {
-                      "declaration": 77131,
+                      "declaration": 47763,
                       "isOffset": false,
                       "isSlot": false,
                       "src": "12830:5:33",
                       "valueSize": 1
                     }
                   ],
-                  "id": 77138,
+                  "id": 47770,
                   "nodeType": "InlineAssembly",
                   "src": "11322:1544:33"
                 }
               ]
             },
             "documentation": {
-              "id": 77127,
+              "id": 47759,
               "nodeType": "StructuredDocumentation",
               "src": "10965:170:33",
               "text": "@dev Returns the `data` from the bytecode of the storage contract at `pointer`,\n from the byte at `start`, to the byte at `end` (exclusive) of the data stored."
@@ -4667,17 +4667,17 @@
             "name": "read",
             "nameLocation": "11149:4:33",
             "parameters": {
-              "id": 77134,
+              "id": 47766,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77129,
+                  "id": 47761,
                   "mutability": "mutable",
                   "name": "pointer",
                   "nameLocation": "11162:7:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77140,
+                  "scope": 47772,
                   "src": "11154:15:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4686,7 +4686,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 77128,
+                    "id": 47760,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "11154:7:33",
@@ -4700,12 +4700,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 77131,
+                  "id": 47763,
                   "mutability": "mutable",
                   "name": "start",
                   "nameLocation": "11179:5:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77140,
+                  "scope": 47772,
                   "src": "11171:13:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4714,7 +4714,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 77130,
+                    "id": 47762,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "11171:7:33",
@@ -4727,12 +4727,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 77133,
+                  "id": 47765,
                   "mutability": "mutable",
                   "name": "end",
                   "nameLocation": "11194:3:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77140,
+                  "scope": 47772,
                   "src": "11186:11:33",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4741,7 +4741,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 77132,
+                    "id": 47764,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "11186:7:33",
@@ -4756,17 +4756,17 @@
               "src": "11153:45:33"
             },
             "returnParameters": {
-              "id": 77137,
+              "id": 47769,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 77136,
+                  "id": 47768,
                   "mutability": "mutable",
                   "name": "data",
                   "nameLocation": "11259:4:33",
                   "nodeType": "VariableDeclaration",
-                  "scope": 77140,
+                  "scope": 47772,
                   "src": "11246:17:33",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4775,7 +4775,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 77135,
+                    "id": 47767,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "11246:5:33",
@@ -4789,7 +4789,7 @@
               ],
               "src": "11245:19:33"
             },
-            "scope": 77141,
+            "scope": 47773,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
@@ -4801,22 +4801,22 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 77039,
+          "id": 47671,
           "nodeType": "StructuredDocumentation",
           "src": "57:462:33",
           "text": "@notice Read and write to persistent storage at a fraction of the cost.\n @author Solady (https://github.com/vectorized/solmady/blob/main/src/utils/SSTORE2.sol)\n @author Saw-mon-and-Natalie (https://github.com/Saw-mon-and-Natalie)\n @author Modified from Solmate (https://github.com/transmissions11/solmate/blob/main/src/utils/SSTORE2.sol)\n @author Modified from 0xSequence (https://github.com/0xSequence/sstore2/blob/master/contracts/SSTORE2.sol)"
         },
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          77141
+          47773
         ],
         "name": "SSTORE2",
         "nameLocation": "527:7:33",
-        "scope": 77142,
+        "scope": 47774,
         "usedErrors": [
-          77046,
-          77049,
-          77052
+          47678,
+          47681,
+          47684
         ],
         "usedEvents": []
       }

@@ -4,7 +4,7 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 
-const Header = () => {
+const Header = (props: {}) => {
   const { selectedChain, setSelectedChain } = useContext(ChainContext);
 
   return (

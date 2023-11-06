@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import { ChainContext } from "../context/ChainContext";
 import { Web3Button, useContract } from "@thirdweb-dev/react";
-import { useLootBoxRevealContracts } from "../contracts";
+import { useLootBoxRevealContracts, userMint } from "../contracts";
 
 const getShortAddress = (address: string | undefined): string | undefined => {
   if (address === undefined) {
@@ -10,13 +10,13 @@ const getShortAddress = (address: string | undefined): string | undefined => {
   return address.slice(0, 8) + "...." + address.slice(-6, -1);
 };
 
-const Card: React.FC<
-  React.PropsWithChildren<{
-    setDisplayVerify: React.Dispatch<React.SetStateAction<boolean>>;
-  }>
-> = ({ setDisplayVerify }) => {
+const Card: React.FC = (props: any) => {
+  const stage = props.stage;
+  const userAddr = props.userAddr;
   const { selectedChain } = useContext(ChainContext);
   const lcs = useLootBoxRevealContracts(selectedChain);
+  const setDisplayVerify = props.setDisplayVerify;
+  const invalidateState = props.invalidateState;
 
   return (
     <div className="flex justify-center pt-40 pb-10">
@@ -31,7 +31,7 @@ const Card: React.FC<
             Moon Math Lover NFT
           </div>
           <div className="pb-5 font-mono">
-            <p className="text-sm text-gray-400">getShortAddress()</p>
+            <p className="text-sm text-gray-400">CONTRACT ADDRESS</p>
             <p className="text-lg text-white">
               {getShortAddress(lcs.demoDayContract?.getAddress())}
             </p>
@@ -49,12 +49,9 @@ const Card: React.FC<
             </div>
             {lcs.demoDayContract ? (
               <Web3Button
+                isDisabled={stage === 2}
                 contractAddress={lcs.demoDayContract.getAddress()}
-                action={async () => {
-                  await lcs.demoDayContract?.call(
-                    "replace with the change stage function"
-                  );
-                }}
+                action={(demoDay: any) => userMint(demoDay, invalidateState)}
                 onSuccess={() => {
                   setDisplayVerify(true);
                 }}

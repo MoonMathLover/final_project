@@ -1,18 +1,23 @@
 import ProgressStepper from "./components/ProgressStepper";
 import Table from "./components/Table";
-import { useContractRead, useContract } from "@thirdweb-dev/react";
-import { useContext, useEffect } from "react";
-import { ChainContext } from "../../context/ChainContext";
-import { useLootBoxRevealContracts } from "../../contracts";
 
-const Verify: React.FC = () => {
-  const { selectedChain } = useContext(ChainContext);
-  const lcs = useLootBoxRevealContracts(selectedChain);
-  const { data: stage } = useContractRead(lcs.demoDayContract, "stage");
-
+const Verify: React.FC = (props: any) => {
+  const stage = props.stage;
+  const owner = props.owner;
+  console.log("Verify: owner:", owner, "stage:", stage);
   return (
     <>
-      <ProgressStepper />
+      <ProgressStepper
+        selectedChain={props.selectedChain}
+        invalidateState={props.invalidateState}
+        owner={owner}
+        stage={stage}
+        randaoBlockNumber={props.randaoBlockNumber}
+        verifierCodeHash={props.verifierCodeHash}
+        mintCounter={props.mintCounter}
+        randaoRandomness={props.randaoRandomness}
+        verifierAddr={props.verifierAddr}
+      />
       {stage == 4 ? <Table /> : <></>}
     </>
   );

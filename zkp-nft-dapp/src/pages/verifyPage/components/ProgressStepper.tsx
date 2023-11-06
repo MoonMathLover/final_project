@@ -1,22 +1,41 @@
 import Stepper from "awesome-react-stepper";
+import { Web3Button, useAddress } from "@thirdweb-dev/react";
 import {
-  Web3Button,
-  useContractRead,
-  useAddress,
-  useSDK,
-} from "@thirdweb-dev/react";
-import { useContext, useEffect } from "react";
-import { ChainContext } from "../../../context/ChainContext";
-import { useLootBoxRevealContracts } from "../../../contracts";
+  useLootBoxRevealContracts,
+  nextButtonData,
+  stateToStep,
+} from "../../../contracts";
 
-const ProgressStepper: React.FC = () => {
-  const { selectedChain } = useContext(ChainContext);
-  const lcs = useLootBoxRevealContracts(selectedChain);
-  const { data: stage } = useContractRead(lcs.demoDayContract, "stage");
-  const { data: owner } = useContractRead(lcs.demoDayContract, "owner");
-  console.log("owner:", owner);
-
+const ProgressStepper: React.FC = (props: any) => {
+  const selectedChain = props.selectedChain;
+  const invalidateState = props.invalidateState;
+  const owner = props.owner;
+  const stage = props.stage;
+  const randaoBlockNumber = props.randaoBlockNumber;
+  const verifierCodeHash = props.verifierCodeHash;
+  const mintCounter = props.mintCounter;
+  const randaoRandomness = props.randaoRandomness;
+  const verifierAddr = props.verifierAddr;
   const userAddr = useAddress();
+  const lcs = useLootBoxRevealContracts(selectedChain);
+  console.log(
+    "owner:",
+    owner,
+    "stage:",
+    stage,
+    "userAddr:",
+    userAddr,
+    "randaoBlockNumber:",
+    randaoBlockNumber.toString(),
+    "verifierCodeHash:",
+    verifierCodeHash,
+    "mintCounter:",
+    mintCounter.toString(),
+    "randaoRandomness:",
+    randaoRandomness.toString(),
+    "verifierAddr:",
+    verifierAddr
+  );
   // Debug call revert
   // const sdk = useSDK();
   // useEffect(() => {
@@ -35,6 +54,27 @@ const ProgressStepper: React.FC = () => {
   //   }
   // }, []);
 
+  // useEffect(() => {
+  //   const test = async () => {
+  //     if (lcs.demoDayContract !== undefined && userAddr !== undefined) {
+  //       await stage1_Next(lcs.demoDayContract);
+  //     }
+  //   };
+  //   test().catch(console.error);
+  // });
+
+  const bD = nextButtonData({
+    selectedChain,
+    owner,
+    stage,
+    userAddr,
+    randaoBlockNumber,
+    verifierCodeHash,
+    mintCounter,
+    randaoRandomness,
+    verifierAddr,
+  });
+
   if (stage === undefined) {
     return <></>;
   }
@@ -42,21 +82,40 @@ const ProgressStepper: React.FC = () => {
     <Stepper
       fillStroke="#172539"
       activeColor="#172539"
-      defaultActiveStep={stage}
+      defaultActiveStep={stateToStep({
+        owner,
+        stage,
+        userAddr,
+        randaoBlockNumber,
+        verifierCodeHash,
+        mintCounter,
+        randaoRandomness,
+        verifierAddr,
+      })}
       activeProgressBorder="2px solid grey"
       continueBtn={
         userAddr === owner ? (
           <Web3Button
             contractAddress={lcs.demoDayContract!.getAddress()}
-            action={async () => {
-              await lcs.demoDayContract?.call(
-                "replace with the change stage function"
-              );
-            }}
+            action={(demoDay: any) => bD.nextFunc(demoDay, invalidateState)}
             onSuccess={() => {}}
             onError={() => {}}
           >
-            Next Stage
+            {bD.label}
+          </Web3Button>
+        ) : (
+          <button></button>
+        )
+      }
+      submitBtn={
+        userAddr === owner ? (
+          <Web3Button
+            contractAddress={lcs.demoDayContract!.getAddress()}
+            action={(demoDay: any) => bD.nextFunc(demoDay, invalidateState)}
+            onSuccess={() => {}}
+            onError={() => {}}
+          >
+            {bD.label}
           </Web3Button>
         ) : (
           <button></button>
@@ -68,19 +127,28 @@ const ProgressStepper: React.FC = () => {
       contentBoxClassName="flex flex-col"
     >
       <div className="m-auto my-10 font-mono text-2xl text-white whitespace-nowrap">
-        Initialization
+        Submit Commitments
       </div>
       <div className="m-auto my-10 font-mono text-2xl text-white whitespace-nowrap">
-        Submit Commitments
+        Submit Commitments 2
       </div>
       <div className="m-auto my-10 font-mono text-2xl text-white whitespace-nowrap">
         Public Sale
       </div>
       <div className="m-auto my-10 font-mono text-2xl text-white whitespace-nowrap">
+        Public Sale 2
+      </div>
+      <div className="m-auto my-10 font-mono text-2xl text-white whitespace-nowrap">
         Reveal Random Source
       </div>
       <div className="m-auto my-10 font-mono text-2xl text-white whitespace-nowrap">
+        Reveal Random Verifier
+      </div>
+      <div className="m-auto my-10 font-mono text-2xl text-white whitespace-nowrap">
         Open Blind Lootbox
+      </div>
+      <div className="m-auto my-10 font-mono text-2xl text-white whitespace-nowrap">
+        Finished
       </div>
     </Stepper>
   );

@@ -1,0 +1,840 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212203155c4b2cafa37434883d6aa29e059ecd628009985cc9a1e3e0d01cacc636d2664736f6c63430008160033",
+    "sourceMap": "215:511:44:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;215:511:44;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212203155c4b2cafa37434883d6aa29e059ecd628009985cc9a1e3e0d01cacc636d2664736f6c63430008160033",
+    "sourceMap": "215:511:44:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.22+commit.4fc1097e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/library/LibRandaoForTest.sol\":\"LibRandaoForTest\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":fisher-yates/=lib/fisher-yates/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"src/library/LibRandaoForTest.sol\":{\"keccak256\":\"0xca2f402692b4ec70766ab40f5b43353d1bb30da83a35befb69d8797770ff9925\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://61814f64a5adb91b6f5b9bc6878b76083a4b549dd1a39650e27ff2d002fcef34\",\"dweb:/ipfs/QmdGdT9uXgESYH7PQFMipXbVXcDZf1HG2HowzGXZh5tDNJ\"]},\"src/utils/Events.sol\":{\"keccak256\":\"0x169955be624e1fb103f84e901b8f6dac4945ec3b502810ec4edc005db5e8af89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://64b63ecf4ed2103107e4810f072c4bb704f7f0be7f831acd3a65531dbbf15dc3\",\"dweb:/ipfs/QmRF5f8dRybF4JUVxY2u6qg8v5iRi5UeCfjawsTrgzGeGm\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.22+commit.4fc1097e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "fisher-yates/=lib/fisher-yates/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solady/=lib/solady/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/library/LibRandaoForTest.sol": "LibRandaoForTest"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/library/LibRandaoForTest.sol": {
+        "keccak256": "0xca2f402692b4ec70766ab40f5b43353d1bb30da83a35befb69d8797770ff9925",
+        "urls": [
+          "bzz-raw://61814f64a5adb91b6f5b9bc6878b76083a4b549dd1a39650e27ff2d002fcef34",
+          "dweb:/ipfs/QmdGdT9uXgESYH7PQFMipXbVXcDZf1HG2HowzGXZh5tDNJ"
+        ],
+        "license": "MIT"
+      },
+      "src/utils/Events.sol": {
+        "keccak256": "0x169955be624e1fb103f84e901b8f6dac4945ec3b502810ec4edc005db5e8af89",
+        "urls": [
+          "bzz-raw://64b63ecf4ed2103107e4810f072c4bb704f7f0be7f831acd3a65531dbbf15dc3",
+          "dweb:/ipfs/QmRF5f8dRybF4JUVxY2u6qg8v5iRi5UeCfjawsTrgzGeGm"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/library/LibRandaoForTest.sol",
+    "id": 48684,
+    "exportedSymbols": {
+      "Events": [
+        48729
+      ],
+      "LibRandaoForTest": [
+        48683
+      ],
+      "TypeRandao": [
+        48628
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:695:44",
+    "nodes": [
+      {
+        "id": 48621,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:44",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 48623,
+        "nodeType": "ImportDirective",
+        "src": "98:43:44",
+        "nodes": [],
+        "absolutePath": "src/utils/Events.sol",
+        "file": "../utils/Events.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 48684,
+        "sourceUnit": 48730,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 48622,
+              "name": "Events",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 48729,
+              "src": "106:6:44",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 48628,
+        "nodeType": "StructDefinition",
+        "src": "143:70:44",
+        "nodes": [],
+        "canonicalName": "TypeRandao",
+        "members": [
+          {
+            "constant": false,
+            "id": 48625,
+            "mutability": "mutable",
+            "name": "blockNumber",
+            "nameLocation": "175:11:44",
+            "nodeType": "VariableDeclaration",
+            "scope": 48628,
+            "src": "167:19:44",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 48624,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "167:7:44",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48627,
+            "mutability": "mutable",
+            "name": "randomness",
+            "nameLocation": "200:10:44",
+            "nodeType": "VariableDeclaration",
+            "scope": 48628,
+            "src": "192:18:44",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 48626,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "192:7:44",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "TypeRandao",
+        "nameLocation": "150:10:44",
+        "scope": 48684,
+        "visibility": "public"
+      },
+      {
+        "id": 48683,
+        "nodeType": "ContractDefinition",
+        "src": "215:511:44",
+        "nodes": [
+          {
+            "id": 48652,
+            "nodeType": "FunctionDefinition",
+            "src": "246:260:44",
+            "nodes": [],
+            "body": {
+              "id": 48651,
+              "nodeType": "Block",
+              "src": "373:133:44",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 48642,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 48638,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 48631,
+                        "src": "383:1:44",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_TypeRandao_$48628_storage_ptr",
+                          "typeString": "struct TypeRandao storage pointer"
+                        }
+                      },
+                      "id": 48640,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "385:11:44",
+                      "memberName": "blockNumber",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 48625,
+                      "src": "383:13:44",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "31333337",
+                      "id": 48641,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "399:4:44",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1337_by_1",
+                        "typeString": "int_const 1337"
+                      },
+                      "value": "1337"
+                    },
+                    "src": "383:20:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 48643,
+                  "nodeType": "ExpressionStatement",
+                  "src": "383:20:44"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "hexValue": "31333337",
+                        "id": 48647,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "475:4:44",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1337_by_1",
+                          "typeString": "int_const 1337"
+                        },
+                        "value": "1337"
+                      },
+                      {
+                        "id": 48648,
+                        "name": "futureBlockNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 48635,
+                        "src": "481:17:44",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_1337_by_1",
+                          "typeString": "int_const 1337"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 48644,
+                        "name": "Events",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 48729,
+                        "src": "454:6:44",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Events_$48729_$",
+                          "typeString": "type(library Events)"
+                        }
+                      },
+                      "id": 48646,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "461:13:44",
+                      "memberName": "RandaoPropose",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 48722,
+                      "src": "454:20:44",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256,uint256)"
+                      }
+                    },
+                    "id": 48649,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "454:45:44",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 48650,
+                  "nodeType": "EmitStatement",
+                  "src": "449:50:44"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "propose",
+            "nameLocation": "255:7:44",
+            "parameters": {
+              "id": 48636,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48631,
+                  "mutability": "mutable",
+                  "name": "s",
+                  "nameLocation": "291:1:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48652,
+                  "src": "272:20:44",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TypeRandao_$48628_storage_ptr",
+                    "typeString": "struct TypeRandao"
+                  },
+                  "typeName": {
+                    "id": 48630,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48629,
+                      "name": "TypeRandao",
+                      "nameLocations": [
+                        "272:10:44"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48628,
+                      "src": "272:10:44"
+                    },
+                    "referencedDeclaration": 48628,
+                    "src": "272:10:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TypeRandao_$48628_storage_ptr",
+                      "typeString": "struct TypeRandao"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48633,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48652,
+                  "src": "302:7:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48632,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "302:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48635,
+                  "mutability": "mutable",
+                  "name": "futureBlockNumber",
+                  "nameLocation": "340:17:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48652,
+                  "src": "332:25:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48634,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "332:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "262:101:44"
+            },
+            "returnParameters": {
+              "id": 48637,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "373:0:44"
+            },
+            "scope": 48683,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 48667,
+            "nodeType": "FunctionDefinition",
+            "src": "512:98:44",
+            "nodes": [],
+            "body": {
+              "id": 48666,
+              "nodeType": "Block",
+              "src": "577:33:44",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 48664,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 48660,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 48655,
+                        "src": "587:1:44",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_TypeRandao_$48628_storage_ptr",
+                          "typeString": "struct TypeRandao storage pointer"
+                        }
+                      },
+                      "id": 48662,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "589:10:44",
+                      "memberName": "randomness",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 48627,
+                      "src": "587:12:44",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 48663,
+                      "name": "r",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48657,
+                      "src": "602:1:44",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "587:16:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 48665,
+                  "nodeType": "ExpressionStatement",
+                  "src": "587:16:44"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setRandomness",
+            "nameLocation": "521:13:44",
+            "parameters": {
+              "id": 48658,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48655,
+                  "mutability": "mutable",
+                  "name": "s",
+                  "nameLocation": "554:1:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48667,
+                  "src": "535:20:44",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TypeRandao_$48628_storage_ptr",
+                    "typeString": "struct TypeRandao"
+                  },
+                  "typeName": {
+                    "id": 48654,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48653,
+                      "name": "TypeRandao",
+                      "nameLocations": [
+                        "535:10:44"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48628,
+                      "src": "535:10:44"
+                    },
+                    "referencedDeclaration": 48628,
+                    "src": "535:10:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TypeRandao_$48628_storage_ptr",
+                      "typeString": "struct TypeRandao"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48657,
+                  "mutability": "mutable",
+                  "name": "r",
+                  "nameLocation": "565:1:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48667,
+                  "src": "557:9:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48656,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "557:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "534:33:44"
+            },
+            "returnParameters": {
+              "id": 48659,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "577:0:44"
+            },
+            "scope": 48683,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 48682,
+            "nodeType": "FunctionDefinition",
+            "src": "616:108:44",
+            "nodes": [],
+            "body": {
+              "id": 48681,
+              "nodeType": "Block",
+              "src": "663:61:44",
+              "nodes": [],
+              "statements": [
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "hexValue": "31333337",
+                        "id": 48676,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "698:4:44",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1337_by_1",
+                          "typeString": "int_const 1337"
+                        },
+                        "value": "1337"
+                      },
+                      {
+                        "expression": {
+                          "id": 48677,
+                          "name": "s",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 48670,
+                          "src": "704:1:44",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_TypeRandao_$48628_storage_ptr",
+                            "typeString": "struct TypeRandao storage pointer"
+                          }
+                        },
+                        "id": 48678,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "706:10:44",
+                        "memberName": "randomness",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 48627,
+                        "src": "704:12:44",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_1337_by_1",
+                          "typeString": "int_const 1337"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 48673,
+                        "name": "Events",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 48729,
+                        "src": "678:6:44",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Events_$48729_$",
+                          "typeString": "type(library Events)"
+                        }
+                      },
+                      "id": 48675,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "685:12:44",
+                      "memberName": "RandaoReveal",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 48728,
+                      "src": "678:19:44",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256,uint256)"
+                      }
+                    },
+                    "id": 48679,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "678:39:44",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 48680,
+                  "nodeType": "EmitStatement",
+                  "src": "673:44:44"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "reveal",
+            "nameLocation": "625:6:44",
+            "parameters": {
+              "id": 48671,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48670,
+                  "mutability": "mutable",
+                  "name": "s",
+                  "nameLocation": "651:1:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48682,
+                  "src": "632:20:44",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_TypeRandao_$48628_storage_ptr",
+                    "typeString": "struct TypeRandao"
+                  },
+                  "typeName": {
+                    "id": 48669,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48668,
+                      "name": "TypeRandao",
+                      "nameLocations": [
+                        "632:10:44"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 48628,
+                      "src": "632:10:44"
+                    },
+                    "referencedDeclaration": 48628,
+                    "src": "632:10:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_TypeRandao_$48628_storage_ptr",
+                      "typeString": "struct TypeRandao"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "631:22:44"
+            },
+            "returnParameters": {
+              "id": 48672,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "663:0:44"
+            },
+            "scope": 48683,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "LibRandaoForTest",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          48683
+        ],
+        "name": "LibRandaoForTest",
+        "nameLocation": "223:16:44",
+        "scope": 48684,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 44
+}

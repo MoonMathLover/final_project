@@ -37,13 +37,12 @@ const chainNameToNameOrData = (chain: string) => {
 
 const Web3Root = () => {
   const [selectedChain, setSelectedChain] = useState("anvil");
-
-  // clientId={import.meta.env.VITE_TEMPLATE_CLIENT_ID}
   return (
     <ChainContext.Provider value={{ selectedChain, setSelectedChain }}>
       <ThirdwebProvider
         activeChain={chainNameToNameOrData(selectedChain)}
         supportedChains={supportedChains}
+        clientId={import.meta.env.VITE_THIRD_WEB_CLIENT_ID}
       >
         <BrowserRouter>
           <App />
