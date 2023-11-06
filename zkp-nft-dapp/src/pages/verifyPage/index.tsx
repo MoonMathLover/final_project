@@ -1,5 +1,6 @@
 import ProgressStepper from "./components/ProgressStepper";
 import Table from "./components/Table";
+import { STAGE_FINISHED } from "../../contracts";
 
 const Verify: React.FC = (props: any) => {
   const stage = props.stage;
@@ -18,7 +19,7 @@ const Verify: React.FC = (props: any) => {
         randaoRandomness={props.randaoRandomness}
         verifierAddr={props.verifierAddr}
       />
-      {stage == 4 ? <Table /> : <></>}
+      {stage == STAGE_FINISHED ? <Table /> : <></>}
     </>
   );
 };

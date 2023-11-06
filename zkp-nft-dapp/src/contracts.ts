@@ -1,4 +1,4 @@
-import { useContract, useContractWrite, useSDK } from "@thirdweb-dev/react";
+import { useContract } from "@thirdweb-dev/react";
 import DemoDaySolArtifact from "../contract-artifacts/DemoDay.sol/DemeDay.json";
 import VerifierSolArtifact from "../contract-artifacts/Verifier.sol/Verifier.json";
 import type { SmartContract } from "@thirdweb-dev/react";
@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 import { AccessibilityIcon } from "lucide-react";
 import { BigNumber } from "ethers";
 import unlockData from "../testdata/unlock.json";
+
+const STAGE_FINISHED = 5;
 
 const contractsFromChain = (
   chain: string
