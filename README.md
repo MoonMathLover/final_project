@@ -13,18 +13,19 @@ In terminal 1, run:
 npx hardhat node
 ```
 
-In terminal 2, run:
+In terminal 2, go to the `demo-contract` repo and run:
 
 ```
 # Deploy contracts
-echo PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 > .env
 cd demo-contract
+echo PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 > .env
 ./script/deploy
 ```
 
 ```
 # Set contract addresses for frontend
-Set contract addresses in .env.local when they differ from .env
+cd final_project
+code .env.local
 ```
 
 Repeat the "deploy contract" step to get the DemoDay contract back to stage 1.
