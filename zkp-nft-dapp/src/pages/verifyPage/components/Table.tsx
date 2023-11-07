@@ -1,3 +1,7 @@
+import { useContext } from "react";
+import { ChainContext } from "../../../context/ChainContext";
+import { useContractRead, useContract } from "@thirdweb-dev/react";
+
 type ItemProps = {
   tokenId: number;
   uriBefore: string;
@@ -26,7 +30,19 @@ const Row: React.FC<React.PropsWithChildren<ItemProps>> = ({
 };
 
 const Table: React.FC = () => {
-  // mock data
+  const { selectedChain } = useContext(ChainContext);
+
+  let DEMO_CONTRACT: string = "0x0000000000000000000000000000000000000000";
+  if (selectedChain === "anvil") {
+    DEMO_CONTRACT = import.meta.env["VITE_DEMO_DAY_CONTRACT_ANVIL"];
+  } else if (selectedChain === "goerli") {
+    DEMO_CONTRACT = import.meta.env["VITE_DEMO_DAY_CONTRACT_GOERLI"];
+  } else {
+    console.log("unknown chain");
+  }
+
+  const { contract } = useContract(DEMO_CONTRACT);
+
   const tokenID: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const uriBeforeSwap: string[] = [
     "0",
@@ -41,19 +57,23 @@ const Table: React.FC = () => {
     "9",
     "10",
   ];
-  const uriAfterSwap: string[] = [
-    "10",
-    "9",
-    "8",
-    "7",
-    "6",
-    "5",
-    "4",
-    "3",
-    "2",
-    "1",
+  let uriAfterSwap: string[] = [
     "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
   ];
+  for (let i = 0; i < tokenID.length; i++) {
+    const { data: uri } = useContractRead(contract, "tokenURI", [i + 1]);
+    uriAfterSwap[i] = uri;
+  }
 
   return (
     <>
@@ -65,10 +85,10 @@ const Table: React.FC = () => {
                 Token ID
               </th>
               <th scope="col" className="px-6 py-3">
-                URI before swap
+                Before swap
               </th>
               <th scope="col" className="px-6 py-3 rounded-r-lg">
-                URI after swap
+                After swap
               </th>
             </tr>
           </thead>
