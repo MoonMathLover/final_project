@@ -96,7 +96,7 @@ const ProgressStepper: React.FC = (props: any) => {
       continueBtn={
         userAddr === owner ? (
           <Web3Button
-            contractAddress={lcs.demoDayContract!.getAddress()}
+            contractAddress={lcs.demoDayContract?.getAddress()}
             action={(demoDay: any) => bD.nextFunc(demoDay, invalidateState)}
             onSuccess={() => {}}
             onError={() => {}}
@@ -110,7 +110,7 @@ const ProgressStepper: React.FC = (props: any) => {
       submitBtn={
         userAddr === owner ? (
           <Web3Button
-            contractAddress={lcs.demoDayContract!.getAddress()}
+            contractAddress={lcs.demoDayContract?.getAddress()}
             action={(demoDay: any) => bD.nextFunc(demoDay, invalidateState)}
             onSuccess={() => {}}
             onError={() => {}}

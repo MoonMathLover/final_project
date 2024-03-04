@@ -1,15 +1,13 @@
+import { useState, useContext } from "react";
+import { useAddress } from "@thirdweb-dev/react";
+import { ChainContext } from "./context/ChainContext";
+import { useLootBoxState } from "./contracts";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import Verify from "./pages/verifyPage";
-import { useState } from "react";
-import { useAddress } from "@thirdweb-dev/react";
-import { useContext } from "react";
-import { ChainContext } from "./context/ChainContext";
-import { useLootBoxRevealContracts, useLootBoxState } from "./contracts";
 
 export default function App() {
   const { selectedChain } = useContext(ChainContext);
-  const lcs = useLootBoxRevealContracts(selectedChain);
   const userAddr = useAddress();
   const {
     invalidateState,

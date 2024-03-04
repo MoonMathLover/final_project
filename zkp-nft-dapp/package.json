@@ -13,19 +13,19 @@
     "@thirdweb-dev/sdk": "^4",
     "awesome-react-stepper": "^1.1.1",
     "ethers": "^5",
+    "lucide-react": "^0.292.0",
     "react": "^18.2",
     "react-dom": "^18.2",
-    "react-router-dom": "^6.18.0",
-    "lucide-react": "^0.292.0"
+    "react-router-dom": "^6.18.0"
   },
   "devDependencies": {
     "@thirdweb-dev/tsconfig": "^0.1.7",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
     "@vitejs/plugin-react": "^2",
+    "awesome-react-stepper": "^1.1.1",
     "typescript": "^4.7.2",
     "vite": "^3",
-    "vite-plugin-node-polyfills": "^0.7.0",
-    "awesome-react-stepper": "^1.1.1"
+    "vite-plugin-node-polyfills": "^0.7.0"
   }
 }

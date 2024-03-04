@@ -40,20 +40,20 @@
     }
   ],
   "bytecode": {
-    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122096a145ead1f2f06141763b48f0d1d16d0dd682ad9dda1b57ca92c2c83a15532f64736f6c63430008160033",
-    "sourceMap": "58:243:50:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;58:243:50;;;;;;;;;;;;;;;;;",
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220315f4cda4a6ce8832ee47eedbbb2cd640c602ec56cdb26c19b76bea236e38e6d64736f6c63430008150033",
+    "sourceMap": "58:243:49:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;58:243:49;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122096a145ead1f2f06141763b48f0d1d16d0dd682ad9dda1b57ca92c2c83a15532f64736f6c63430008160033",
-    "sourceMap": "58:243:50:-:0;;;;;;;;",
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220315f4cda4a6ce8832ee47eedbbb2cd640c602ec56cdb26c19b76bea236e38e6d64736f6c63430008150033",
+    "sourceMap": "58:243:49:-:0;;;;;;;;",
     "linkReferences": {}
   },
   "methodIdentifiers": {},
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.22+commit.4fc1097e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"currentBlockNumber\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"proposeBlockNumber\",\"type\":\"uint256\"}],\"name\":\"RandaoPropose\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"acctualBlockNumber\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"randomness\",\"type\":\"uint256\"}],\"name\":\"RandaoReveal\",\"type\":\"event\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"events\":{\"RandaoPropose(uint256,uint256)\":{\"notice\":\"LibRandao\"}},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/utils/Events.sol\":\"Events\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":fisher-yates/=lib/fisher-yates/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"src/utils/Events.sol\":{\"keccak256\":\"0x169955be624e1fb103f84e901b8f6dac4945ec3b502810ec4edc005db5e8af89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://64b63ecf4ed2103107e4810f072c4bb704f7f0be7f831acd3a65531dbbf15dc3\",\"dweb:/ipfs/QmRF5f8dRybF4JUVxY2u6qg8v5iRi5UeCfjawsTrgzGeGm\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"currentBlockNumber\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"proposeBlockNumber\",\"type\":\"uint256\"}],\"name\":\"RandaoPropose\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"acctualBlockNumber\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"randomness\",\"type\":\"uint256\"}],\"name\":\"RandaoReveal\",\"type\":\"event\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"events\":{\"RandaoPropose(uint256,uint256)\":{\"notice\":\"LibRandao\"}},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/utils/Events.sol\":\"Events\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":fisher-yates/=lib/fisher-yates/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"src/utils/Events.sol\":{\"keccak256\":\"0x169955be624e1fb103f84e901b8f6dac4945ec3b502810ec4edc005db5e8af89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://64b63ecf4ed2103107e4810f072c4bb704f7f0be7f831acd3a65531dbbf15dc3\",\"dweb:/ipfs/QmRF5f8dRybF4JUVxY2u6qg8v5iRi5UeCfjawsTrgzGeGm\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.22+commit.4fc1097e"
+      "version": "0.8.21+commit.d9974bed"
     },
     "language": "Solidity",
     "output": {
@@ -144,19 +144,19 @@
   },
   "ast": {
     "absolutePath": "src/utils/Events.sol",
-    "id": 48737,
+    "id": 48857,
     "exportedSymbols": {
       "Events": [
-        48736
+        48856
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:270:50",
+    "src": "32:270:49",
     "nodes": [
       {
-        "id": 48722,
+        "id": 48842,
         "nodeType": "PragmaDirective",
-        "src": "32:24:50",
+        "src": "32:24:49",
         "nodes": [],
         "literals": [
           "solidity",
@@ -166,39 +166,39 @@
         ]
       },
       {
-        "id": 48736,
+        "id": 48856,
         "nodeType": "ContractDefinition",
-        "src": "58:243:50",
+        "src": "58:243:49",
         "nodes": [
           {
-            "id": 48729,
+            "id": 48849,
             "nodeType": "EventDefinition",
-            "src": "112:106:50",
+            "src": "112:106:49",
             "nodes": [],
             "anonymous": false,
             "documentation": {
-              "id": 48723,
+              "id": 48843,
               "nodeType": "StructuredDocumentation",
-              "src": "79:28:50",
+              "src": "79:28:49",
               "text": " LibRandao"
             },
             "eventSelector": "d642a917cfc06a8458004df786ba343f8b87cd6b6b8618fd5af161a4174c2e33",
             "name": "RandaoPropose",
-            "nameLocation": "118:13:50",
+            "nameLocation": "118:13:49",
             "parameters": {
-              "id": 48728,
+              "id": 48848,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 48725,
+                  "id": 48845,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "currentBlockNumber",
-                  "nameLocation": "157:18:50",
+                  "nameLocation": "157:18:49",
                   "nodeType": "VariableDeclaration",
-                  "scope": 48729,
-                  "src": "141:34:50",
+                  "scope": 48849,
+                  "src": "141:34:49",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -206,10 +206,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 48724,
+                    "id": 48844,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "141:7:50",
+                    "src": "141:7:49",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -219,14 +219,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 48727,
+                  "id": 48847,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "proposeBlockNumber",
-                  "nameLocation": "193:18:50",
+                  "nameLocation": "193:18:49",
                   "nodeType": "VariableDeclaration",
-                  "scope": 48729,
-                  "src": "185:26:50",
+                  "scope": 48849,
+                  "src": "185:26:49",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -234,10 +234,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 48726,
+                    "id": 48846,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "185:7:50",
+                    "src": "185:7:49",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -246,32 +246,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "131:86:50"
+              "src": "131:86:49"
             }
           },
           {
-            "id": 48735,
+            "id": 48855,
             "nodeType": "EventDefinition",
-            "src": "224:75:50",
+            "src": "224:75:49",
             "nodes": [],
             "anonymous": false,
             "eventSelector": "99923554a4b42f7c1be47dc94ecf54d52a2049d48ad045e9c718117cd63d727d",
             "name": "RandaoReveal",
-            "nameLocation": "230:12:50",
+            "nameLocation": "230:12:49",
             "parameters": {
-              "id": 48734,
+              "id": 48854,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 48731,
+                  "id": 48851,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "acctualBlockNumber",
-                  "nameLocation": "259:18:50",
+                  "nameLocation": "259:18:49",
                   "nodeType": "VariableDeclaration",
-                  "scope": 48735,
-                  "src": "243:34:50",
+                  "scope": 48855,
+                  "src": "243:34:49",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -279,10 +279,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 48730,
+                    "id": 48850,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "243:7:50",
+                    "src": "243:7:49",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -292,14 +292,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 48733,
+                  "id": 48853,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "randomness",
-                  "nameLocation": "287:10:50",
+                  "nameLocation": "287:10:49",
                   "nodeType": "VariableDeclaration",
-                  "scope": 48735,
-                  "src": "279:18:50",
+                  "scope": 48855,
+                  "src": "279:18:49",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -307,10 +307,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 48732,
+                    "id": 48852,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "279:7:50",
+                    "src": "279:7:49",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -319,7 +319,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "242:56:50"
+              "src": "242:56:49"
             }
           }
         ],
@@ -330,19 +330,19 @@
         "contractKind": "library",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          48736
+          48856
         ],
         "name": "Events",
-        "nameLocation": "66:6:50",
-        "scope": 48737,
+        "nameLocation": "66:6:49",
+        "scope": 48857,
         "usedErrors": [],
         "usedEvents": [
-          48729,
-          48735
+          48849,
+          48855
         ]
       }
     ],
     "license": "MIT"
   },
-  "id": 50
+  "id": 49
 }

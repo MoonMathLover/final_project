@@ -1,6 +1,6 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ChainContext } from "../context/ChainContext";
-import { Web3Button, useContract } from "@thirdweb-dev/react";
+import { Web3Button } from "@thirdweb-dev/react";
 import { useLootBoxRevealContracts, userMint } from "../contracts";
 
 const getShortAddress = (address: string | undefined): string | undefined => {
@@ -12,7 +12,6 @@ const getShortAddress = (address: string | undefined): string | undefined => {
 
 const Card: React.FC = (props: any) => {
   const stage = props.stage;
-  const userAddr = props.userAddr;
   const { selectedChain } = useContext(ChainContext);
   const lcs = useLootBoxRevealContracts(selectedChain);
   const setDisplayVerify = props.setDisplayVerify;

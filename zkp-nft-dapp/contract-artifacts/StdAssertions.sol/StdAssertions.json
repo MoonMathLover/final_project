@@ -405,10 +405,10 @@
     "IS_TEST()": "fa7626d4",
     "failed()": "ba414fa6"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.22+commit.4fc1097e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"log\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"log_address\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"val\",\"type\":\"uint256[]\"}],\"name\":\"log_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"int256[]\",\"name\":\"val\",\"type\":\"int256[]\"}],\"name\":\"log_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address[]\",\"name\":\"val\",\"type\":\"address[]\"}],\"name\":\"log_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"log_bytes\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"log_bytes32\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"name\":\"log_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"val\",\"type\":\"address\"}],\"name\":\"log_named_address\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"val\",\"type\":\"uint256[]\"}],\"name\":\"log_named_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256[]\",\"name\":\"val\",\"type\":\"int256[]\"}],\"name\":\"log_named_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address[]\",\"name\":\"val\",\"type\":\"address[]\"}],\"name\":\"log_named_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"val\",\"type\":\"bytes\"}],\"name\":\"log_named_bytes\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"val\",\"type\":\"bytes32\"}],\"name\":\"log_named_bytes32\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"val\",\"type\":\"int256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"decimals\",\"type\":\"uint256\"}],\"name\":\"log_named_decimal_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"val\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"decimals\",\"type\":\"uint256\"}],\"name\":\"log_named_decimal_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"val\",\"type\":\"int256\"}],\"name\":\"log_named_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"val\",\"type\":\"string\"}],\"name\":\"log_named_string\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"val\",\"type\":\"uint256\"}],\"name\":\"log_named_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"log_string\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"log_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"logs\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"IS_TEST\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"failed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/forge-std/src/StdAssertions.sol\":\"StdAssertions\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":fisher-yates/=lib/fisher-yates/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"lib/forge-std/lib/ds-test/src/test.sol\":{\"keccak256\":\"0x8758531bbac3972efcf1fa46383dbe1d276406fe527bc7abb2f236486278e83b\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://1f64264d61506847acf8761e84aff690cebe830958eac00bac7924d8be569240\",\"dweb:/ipfs/QmSekDJvJ82MZAmr63n7YvfLzQ7gS4NLSHPmHL3GN3rw8k\"]},\"lib/forge-std/src/StdAssertions.sol\":{\"keccak256\":\"0x1a0dee4d8b2c81e9318e87dd85ef009467ebf7dba6575530d1fce94d34dbae60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ddd790c86ddde1013d1f7a552a80168eacf2e9244077f96799180644ad523a5b\",\"dweb:/ipfs/QmYinBFt9uEVFXP9ytT9CDoNpzWieQVgLWRFRNiypMzJaL\"]},\"lib/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"log\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"log_address\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"val\",\"type\":\"uint256[]\"}],\"name\":\"log_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"int256[]\",\"name\":\"val\",\"type\":\"int256[]\"}],\"name\":\"log_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address[]\",\"name\":\"val\",\"type\":\"address[]\"}],\"name\":\"log_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"log_bytes\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"log_bytes32\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"name\":\"log_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"val\",\"type\":\"address\"}],\"name\":\"log_named_address\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"val\",\"type\":\"uint256[]\"}],\"name\":\"log_named_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256[]\",\"name\":\"val\",\"type\":\"int256[]\"}],\"name\":\"log_named_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address[]\",\"name\":\"val\",\"type\":\"address[]\"}],\"name\":\"log_named_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"val\",\"type\":\"bytes\"}],\"name\":\"log_named_bytes\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"val\",\"type\":\"bytes32\"}],\"name\":\"log_named_bytes32\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"val\",\"type\":\"int256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"decimals\",\"type\":\"uint256\"}],\"name\":\"log_named_decimal_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"val\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"decimals\",\"type\":\"uint256\"}],\"name\":\"log_named_decimal_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"val\",\"type\":\"int256\"}],\"name\":\"log_named_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"val\",\"type\":\"string\"}],\"name\":\"log_named_string\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"val\",\"type\":\"uint256\"}],\"name\":\"log_named_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"log_string\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"log_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"logs\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"IS_TEST\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"failed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/forge-std/src/StdAssertions.sol\":\"StdAssertions\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":fisher-yates/=lib/fisher-yates/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"lib/forge-std/lib/ds-test/src/test.sol\":{\"keccak256\":\"0x8758531bbac3972efcf1fa46383dbe1d276406fe527bc7abb2f236486278e83b\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://1f64264d61506847acf8761e84aff690cebe830958eac00bac7924d8be569240\",\"dweb:/ipfs/QmSekDJvJ82MZAmr63n7YvfLzQ7gS4NLSHPmHL3GN3rw8k\"]},\"lib/forge-std/src/StdAssertions.sol\":{\"keccak256\":\"0x1a0dee4d8b2c81e9318e87dd85ef009467ebf7dba6575530d1fce94d34dbae60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ddd790c86ddde1013d1f7a552a80168eacf2e9244077f96799180644ad523a5b\",\"dweb:/ipfs/QmYinBFt9uEVFXP9ytT9CDoNpzWieQVgLWRFRNiypMzJaL\"]},\"lib/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.22+commit.4fc1097e"
+      "version": "0.8.21+commit.d9974bed"
     },
     "language": "Solidity",
     "output": {
@@ -876,7 +876,7 @@
         4526
       ],
       "stdMath": [
-        9202
+        9176
       ]
     },
     "nodeType": "SourceUnit",
@@ -932,7 +932,7 @@
         "file": "./StdMath.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 4527,
-        "sourceUnit": 9203,
+        "sourceUnit": 9177,
         "symbolAliases": [
           {
             "foreign": {
@@ -940,7 +940,7 @@
               "name": "stdMath",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 9202,
+              "referencedDeclaration": 9176,
               "src": "114:7:4",
               "typeDescriptions": {}
             },
@@ -6775,10 +6775,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "3614:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -6790,7 +6790,7 @@
                       "memberLocation": "3622:5:4",
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9113,
+                      "referencedDeclaration": 9087,
                       "src": "3614:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -7457,10 +7457,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "4109:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -7472,7 +7472,7 @@
                       "memberLocation": "4117:5:4",
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9113,
+                      "referencedDeclaration": 9087,
                       "src": "4109:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -7938,10 +7938,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "4415:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -7953,7 +7953,7 @@
                       "memberLocation": "4423:5:4",
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9113,
+                      "referencedDeclaration": 9087,
                       "src": "4415:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -8711,10 +8711,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "5027:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -8726,7 +8726,7 @@
                       "memberLocation": "5035:5:4",
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9113,
+                      "referencedDeclaration": 9087,
                       "src": "5027:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -9235,10 +9235,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "5323:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -9250,7 +9250,7 @@
                       "memberLocation": "5331:5:4",
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9149,
+                      "referencedDeclaration": 9123,
                       "src": "5323:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -9917,10 +9917,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "5815:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -9932,7 +9932,7 @@
                       "memberLocation": "5823:5:4",
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9149,
+                      "referencedDeclaration": 9123,
                       "src": "5815:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -10398,10 +10398,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "6119:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -10413,7 +10413,7 @@
                       "memberLocation": "6127:5:4",
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9149,
+                      "referencedDeclaration": 9123,
                       "src": "6119:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -11171,10 +11171,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "6726:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -11186,7 +11186,7 @@
                       "memberLocation": "6734:5:4",
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9149,
+                      "referencedDeclaration": 9123,
                       "src": "6726:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -11838,10 +11838,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "7208:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -11853,7 +11853,7 @@
                       "memberLocation": "7216:12:4",
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9172,
+                      "referencedDeclaration": 9146,
                       "src": "7208:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -12787,10 +12787,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "7979:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -12802,7 +12802,7 @@
                       "memberLocation": "7987:12:4",
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9172,
+                      "referencedDeclaration": 9146,
                       "src": "7979:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -13411,10 +13411,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "8505:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -13426,7 +13426,7 @@
                       "memberLocation": "8513:12:4",
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9172,
+                      "referencedDeclaration": 9146,
                       "src": "8505:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -14419,10 +14419,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "9345:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -14434,7 +14434,7 @@
                       "memberLocation": "9353:12:4",
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9172,
+                      "referencedDeclaration": 9146,
                       "src": "9345:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -15086,10 +15086,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "9767:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -15101,7 +15101,7 @@
                       "memberLocation": "9775:12:4",
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9201,
+                      "referencedDeclaration": 9175,
                       "src": "9767:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -16035,10 +16035,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "10439:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -16050,7 +16050,7 @@
                       "memberLocation": "10447:12:4",
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9201,
+                      "referencedDeclaration": 9175,
                       "src": "10439:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -16659,10 +16659,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "10869:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -16674,7 +16674,7 @@
                       "memberLocation": "10877:12:4",
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9201,
+                      "referencedDeclaration": 9175,
                       "src": "10869:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -17667,10 +17667,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9202,
+                        "referencedDeclaration": 9176,
                         "src": "11622:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9202_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$9176_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -17682,7 +17682,7 @@
                       "memberLocation": "11630:12:4",
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9201,
+                      "referencedDeclaration": 9175,
                       "src": "11622:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",

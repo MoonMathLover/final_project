@@ -4,7 +4,6 @@ import VerifierSolArtifact from "../contract-artifacts/Verifier.sol/Verifier.jso
 import type { SmartContract } from "@thirdweb-dev/react";
 import * as ethers from "ethers";
 import { useState, useEffect } from "react";
-import { AccessibilityIcon } from "lucide-react";
 import { BigNumber } from "ethers";
 import unlockData from "../testdata/unlock.json";
 
